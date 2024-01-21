@@ -1,6 +1,3 @@
-I can certainly provide you with a template for a GitHub repository README file for the "Prescribo" project. You can create a new file named `README.md` in the root of your GitHub repository and paste the following content:
-
-```markdown
 # Prescribo
 
 Prescribo is a healthcare management system designed to simplify the prescription process, offering convenience, efficiency, and a paperless experience for both healthcare providers and patients.
