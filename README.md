@@ -27,6 +27,11 @@ Prescribo is a healthcare management system designed to simplify the prescriptio
 - Extract relevant information for quick reference.
 - Reduce reliance on physical documents for healthcare management.
 
+## Demo video
+
+
+https://github.com/RuPaul23/Prescribo/assets/105512611/63a5b715-2214-40bd-9312-d33443723e93
+
 
 ### Application structure
 After successful build, your application structure should look like this:
