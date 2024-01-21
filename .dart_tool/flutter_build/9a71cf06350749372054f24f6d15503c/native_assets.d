@@ -1,0 +1,1 @@
+ D:\\Desktop\\prescribo-v1.0.1\\.dart_tool\\flutter_build\\9a71cf06350749372054f24f6d15503c\\native_assets.yaml: 
