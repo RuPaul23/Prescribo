@@ -1,6 +1,7 @@
 class ImageConstant {
   // Image folder path
   static String imagePath = 'assets/images';
+  static String imagePath1 = 'assets\images\NavigationBar';
 
   // 1_Splash Screen images
   static String imgLogoNoBackground = '$imagePath/img_logo_no_background.png';
@@ -35,7 +36,7 @@ class ImageConstant {
 
   static String imgOrder = '$imagePath/img_group_9.png';
 
-  static String imgCategory = '$imagePath/img_category.svg';
+  static String imgCategory = '$imagePath/RightGo.png';
 
   static String imgMedicalPrescriptionRafiki =
       '$imagePath/img_medical_prescription_rafiki.png';
@@ -189,4 +190,13 @@ class ImageConstant {
   static String imgRightArrow = '$imagePath/RightGo.png';
 
   static String rightarrow = '$imagePath/right-arrow (2).png';
+
+
+
+  //Navigation Bar
+  static String imgHomeBar = '$imagePath/Home.png';
+  static String imgPrescriptionBar = '$imagePath/Report.png';
+  static String imgCalenderBar = '$imagePath/Calendar.png';
+  static String imgProfile = '$imagePath/Profile.png';
+  static String imgScanner = '$imagePath/Scanner.png';
 }
