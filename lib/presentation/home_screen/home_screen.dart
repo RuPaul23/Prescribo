@@ -272,7 +272,7 @@ class HomeScreen extends StatelessWidget {
                               padding: EdgeInsets.only(left: 10.h),
                               child: _buildTickOne(context,
                                   tickImage: ImageConstant.imgTick11,
-                                  doseText: "1 Dose"))
+                                  doseText: "2 Dose"))
                         ])),
                 SizedBox(height: 13.v),
                 Container(
