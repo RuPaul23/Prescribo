@@ -66,6 +66,10 @@ google_fonts
 2.14
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.1.0/
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-6.1.0/lib/
+graphs
+2.18
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/graphs-2.3.1/
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/graphs-2.3.1/lib/
 http
 3.2
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.0/
@@ -142,6 +146,14 @@ plugin_platform_interface
 3.0
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib/
+rive
+2.17
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/rive-0.12.4/
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/rive-0.12.4/lib/
+rive_common
+2.17
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/rive_common-0.2.8/
+file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/rive_common-0.2.8/lib/
 rxdart
 2.12
 file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.27.7/
@@ -238,6 +250,10 @@ flutter_test
 3.2
 file:///C:/flutter_windows_3.16.7-stable/flutter/packages/flutter_test/
 file:///C:/flutter_windows_3.16.7-stable/flutter/packages/flutter_test/lib/
+flutter_web_plugins
+3.2
+file:///C:/flutter_windows_3.16.7-stable/flutter/packages/flutter_web_plugins/
+file:///C:/flutter_windows_3.16.7-stable/flutter/packages/flutter_web_plugins/lib/
 prescribo
 2.12
 file:///D:/Desktop/Projects/prescribo-v1.0.1/

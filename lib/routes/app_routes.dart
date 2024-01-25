@@ -10,13 +10,13 @@ import 'package:prescribo/presentation/sign_up_correct_password_screen/sign_up_c
 import 'package:prescribo/presentation/reset_password_phone_tab_container_screen/reset_password_phone_tab_container_screen.dart';
 import 'package:prescribo/presentation/reset_password_verify_code_screen/reset_password_verify_code_screen.dart';
 import 'package:prescribo/presentation/create_new_password_screen/create_new_password_screen.dart';
-import 'package:prescribo/presentation/home_screen/home_screen.dart';
-import 'package:prescribo/presentation/consult_screen/consult_screen.dart';
+import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
+import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/presentation/articles_screen/articles_screen.dart';
-import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
-import 'package:prescribo/presentation/precription_screen/precription_screen.dart';
+import 'package:prescribo/NavigationBar/remainder_screen/remainder_screen.dart';
+import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/presentation/scanner_screen/scanner_screen.dart';
-import 'package:prescribo/presentation/profile_screen/profile_screen.dart';
+import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
