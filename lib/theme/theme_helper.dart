@@ -191,7 +191,7 @@ class ColorSchemes {
 /// Class containing custom colors for a primary theme.
 class PrimaryColors {
   // Black
-  Color get black900 => Color(0XFF000000);
+  Color get black900 => Color.fromRGBO(0, 102, 204, 1);
 
   // BlueGray
   Color get blueGray100 => Color(0XFFD3D6DA);

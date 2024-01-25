@@ -14,7 +14,7 @@ class OnboardingScreen extends StatelessWidget {
                 width: double.maxFinite,
                 child: SingleChildScrollView(
                     child: SizedBox(
-                        height: 768.v,
+                        height: 700.adaptSize,
                         width: double.maxFinite,
                         child:
                             Stack(alignment: Alignment.bottomCenter, children: [
@@ -23,21 +23,24 @@ class OnboardingScreen extends StatelessWidget {
                               height: 290.v,
                               width: 375.h,
                               alignment: Alignment.topCenter),
+                        
+
+
                           Align(
                               alignment: Alignment.bottomCenter,
                               child: Container(
                                   padding: EdgeInsets.symmetric(
-                                      horizontal: 54.h, vertical: 46.v),
+                                      horizontal: 50.adaptSize, vertical: 46.adaptSize),
                                   decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadiusStyle.roundedBorder20),
+                                      borderRadius: 
+                                          BorderRadiusStyle.roundedBorder40),
                                   child: Column(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Text("Let’s get started!",
                                             style:
                                                 CustomTextStyles.titleLarge22),
-                                        SizedBox(height: 9.v),
+                                        SizedBox(height: 25.v),
                                         SizedBox(
                                             width: 265.h,
                                             child: Text(

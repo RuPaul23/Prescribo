@@ -65,7 +65,7 @@ class RemainderScreen extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
                                       CustomImageView(
-                                          imagePath: ImageConstant.imgGroup8,
+                                          imagePath: ImageConstant.imgDoctor,
                                           height: 32.adaptSize,
                                           width: 32.adaptSize),
                                       Padding(

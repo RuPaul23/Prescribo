@@ -6,7 +6,7 @@ import 'package:prescribo/widgets/custom_icon_button.dart';
 class HomelistItemWidget extends StatelessWidget {
   HomelistItemWidget({
     Key? key,
-    this.onTapList,
+    this.onTapList, required String imagePath,
   }) : super(
           key: key,
         );
@@ -29,7 +29,7 @@ class HomelistItemWidget extends StatelessWidget {
               padding: EdgeInsets.all(15.h),
               decoration: IconButtonStyleHelper.fillGray,
               child: CustomImageView(
-                imagePath: ImageConstant.imgGroup10,
+                imagePath: ImageConstant.imgPrescription,
               ),
             ),
             SizedBox(height: 15.v),

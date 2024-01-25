@@ -1,3 +1,6 @@
+import 'package:prescribo/presentation/consult_screen/consult_screen.dart';
+import 'package:prescribo/presentation/precription_screen/precription_screen.dart';
+
 import '../home_screen/widgets/homelist_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:prescribo/core/app_export.dart';
@@ -6,6 +9,7 @@ import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
+
 
 // ignore_for_file: must_be_immutable
 class HomeScreen extends StatelessWidget {
@@ -37,10 +41,10 @@ class HomeScreen extends StatelessWidget {
                   _buildTextRow(context),
                   SizedBox(height: 13.v),
                   _buildPillsWhiteRow(context),
-                  SizedBox(height: 14.v),
+                  /*SizedBox(height: 14.v),
                   _buildHealthArticleRow(context),
                   SizedBox(height: 15.v),
-                  _buildArticleRow(context)
+                  _buildArticleRow(context)*/
                 ])),
             bottomNavigationBar: _buildBottomBar(context)));
   }
@@ -53,28 +57,108 @@ class HomeScreen extends StatelessWidget {
             AppbarTitle(text: "prescribo", margin: EdgeInsets.only(left: 24.h)),
         actions: [
           AppbarTrailingImage(
-              imagePath: ImageConstant.imgUser,
+              imagePath: ImageConstant.imgNotification,
               margin: EdgeInsets.fromLTRB(22.h, 14.v, 22.h, 17.v))
         ]);
   }
 
+
+
+
+
+
+
+
+
+
   /// Section Widget
-  Widget _buildHomeList(BuildContext context) {
-    return SizedBox(
-        height: 95.v,
-        child: ListView.separated(
-            padding: EdgeInsets.symmetric(horizontal: 13.h),
-            scrollDirection: Axis.horizontal,
-            separatorBuilder: (context, index) {
-              return SizedBox(width: 18.h);
-            },
-            itemCount: 4,
-            itemBuilder: (context, index) {
-              return HomelistItemWidget(onTapList: () {
-                onTapList(context);
-              });
-            }));
-  }
+ Widget _buildHomeList(BuildContext context) {
+  return SizedBox(
+    height: 95.v,
+    child: ListView.separated(
+      padding: EdgeInsets.symmetric(horizontal: 13.h),
+      scrollDirection: Axis.horizontal,
+      separatorBuilder: (context, index) {
+        return SizedBox(width: 18.h);
+      },
+      itemCount: 4,
+      itemBuilder: (context, index) {
+        String imagePath;
+        switch (index) {
+          case 0:
+            imagePath = ImageConstant.imgPrescription;
+            //text = 'Prescription';
+
+            break;
+          case 1:
+            imagePath = ImageConstant.imgOrder;
+            break;
+          case 2:
+            imagePath = ImageConstant.imgDoctor;
+            break;
+          case 3:
+            imagePath = ImageConstant.imgCategory;
+            break;
+          default:
+            imagePath = '';
+        }
+
+        return HomelistItemWidget(
+          imagePath: imagePath,
+          onTapList: () {
+            // Navigate to different screens based on the index
+            switch (index) {
+              case 0:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>PrecriptionScreen()),
+                );
+                break;
+              case 1:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PrecriptionScreen()),
+                );
+                break;
+              case 2:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ConsultScreen()),
+                );
+                break;
+              case 3:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ConsultScreen()),
+                );
+                break;
+              default:
+            }
+          },
+        );
+      },
+    ),
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /// Section Widget
   Widget _buildCtaStack(BuildContext context) {
@@ -240,7 +324,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildHealthArticleRow(BuildContext context) {
+  /*Widget _buildHealthArticleRow(BuildContext context) {
     return Padding(
         padding: EdgeInsets.only(left: 7.h, right: 10.h),
         child:
@@ -317,6 +401,8 @@ class HomeScreen extends StatelessWidget {
                   margin: EdgeInsets.only(top: 6.v, right: 6.h, bottom: 34.v))
             ]));
   }
+
+  */
 
   /// Section Widget
   Widget _buildBottomBar(BuildContext context) {

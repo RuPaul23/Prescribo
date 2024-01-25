@@ -100,6 +100,9 @@ class BorderRadiusStyle {
   static BorderRadius get roundedBorder35 => BorderRadius.circular(
         35.h,
       );
+  static BorderRadius get roundedBorder40 => BorderRadius.circular(
+        40.h,
+      );
 }
 
 // Comment/Uncomment the below code based on your Flutter SDK version.

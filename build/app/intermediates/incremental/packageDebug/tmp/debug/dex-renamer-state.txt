@@ -1,9 +1,9 @@
-#Sun Jan 21 19:37:39 IST 2024
-base.0=D\:\\Desktop\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=D\:\\Desktop\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.2=D\:\\Desktop\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.3=D\:\\Desktop\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.4=D\:\\Desktop\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+#Thu Jan 25 16:54:39 IST 2024
+base.0=D\:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=D\:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=D\:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.4=D\:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=0/classes.dex

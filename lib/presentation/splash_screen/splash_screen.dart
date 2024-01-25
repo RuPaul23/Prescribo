@@ -9,7 +9,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: appTheme.black900.withOpacity(0.2),
+            backgroundColor: appTheme.black900.withOpacity(0.9),
             body: Container(
                 width: double.maxFinite,
                 padding:
@@ -20,20 +20,22 @@ class SplashScreen extends StatelessWidget {
                       Spacer(flex: 55),
                       CustomImageView(
                           imagePath: ImageConstant.imgLogoNoBackground,
-                          height: 126.v,
-                          width: 262.h),
+                          height: 126.adaptSize,
+                          width: 262.adaptSize),
                       Spacer(flex: 44),
                       CustomIconButton(
-                          height: 77.adaptSize,
-                          width: 77.adaptSize,
-                          padding: EdgeInsets.all(19.h),
+                          height: 80.adaptSize,
+                          width: 80.adaptSize,
+                          padding: EdgeInsets.all(10.h), //arrow size
                           decoration: IconButtonStyleHelper.outlineWhiteA,
                           onTap: () {
                             onTapBtnIconButton(context);
                           },
                           child: CustomImageView(
-                              imagePath: ImageConstant.imgArrowRightOpen))
-                    ]))));
+                              imagePath: ImageConstant.rightarrow,
+                              )) 
+
+                          ]))));
   }
 
   /// Navigates to the onboardingScreen when the action is triggered.

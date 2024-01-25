@@ -29,11 +29,11 @@ class ImageConstant {
   static String imgIconCall = '$imagePath/img_icon_call.svg';
 
   // Home images
-  static String imgUser = '$imagePath/img_user.svg';
+  static String imgNotification = '$imagePath/notification-bell.png';
 
-  static String imgGroup10 = '$imagePath/img_group_10.png';
+  static String imgPrescription = '$imagePath/img_group_10.png';
 
-  static String imgGroup9 = '$imagePath/img_group_9.png';
+  static String imgOrder = '$imagePath/img_group_9.png';
 
   static String imgCategory = '$imagePath/img_category.svg';
 
@@ -172,11 +172,11 @@ class ImageConstant {
   static String imgIconChevronLeftOnprimary =
       '$imagePath/img_icon_chevron_left_onprimary.svg';
   
-  static String imgArrowRightOpen = '$imagePath/arrrowRIght.png';
+  static String imgArrowRightOpen = '$imagePath/arrowRight.png';
 
   static String imgRewind = '$imagePath/img_rewind.svg';
 
-  static String imgGroup8 = '$imagePath/img_group_8.png';
+  static String imgDoctor = '$imagePath/img_group_8.png';
 
   static String imgBookmark = '$imagePath/img_bookmark.svg';
 
@@ -185,4 +185,8 @@ class ImageConstant {
   static String imgComponent1 = '$imagePath/img_component_1.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+  static String imgRightArrow = '$imagePath/RightGo.png';
+
+  static String rightarrow = '$imagePath/right-arrow (2).png';
 }
