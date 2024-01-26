@@ -58,6 +58,8 @@ class LandingPage extends StatelessWidget {
     );
   }
 
+
+
 //Home List
 Widget _buildHomeList(BuildContext context) {
   List<String> imagePaths = [
@@ -130,6 +132,8 @@ Widget _buildHomeList(BuildContext context) {
     ),
   );
 }
+
+
 
 
 }

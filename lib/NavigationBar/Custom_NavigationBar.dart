@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:prescribo/NavigationBar/Page/Calender_page.dart';
 import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
 import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
-import 'package:prescribo/NavigationBar/Page/Profile_page.dart';
+import 'package:prescribo/NavigationBar/Page/Profile/Profile_page.dart';
 import 'package:prescribo/NavigationBar/Page/Scanner_page.dart';
 import 'package:prescribo/core/app_export.dart';
 
@@ -22,7 +22,7 @@ class CustomNavigationState extends State<CustomnavigationBar> {
     PrescriptionPage(),
     ScannerPage(),
     CalendarPage(),
-    ProfilePage(),
+    ProfileScreen(),
   ];
 
   @override

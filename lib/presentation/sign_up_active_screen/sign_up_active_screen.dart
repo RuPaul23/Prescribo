@@ -113,7 +113,7 @@ class SignUpActiveScreen extends StatelessWidget {
       prefix: Container(
         margin: EdgeInsets.fromLTRB(24.h, 16.v, 16.h, 16.v),
         child: CustomImageView(
-          imagePath: ImageConstant.imgSettings,
+          //imagePath: ImageConstant.imgSettings,
           height: 24.adaptSize,
           width: 24.adaptSize,
         ),

@@ -91,7 +91,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 child: const Text('Next'),
                 onPressed: () {
                   if (controller.page!.toInt() == 2)
-                    onTapBtnIconButton(context);
+                    Navigator.pushNamed(context, AppRoutes.onboardingScreen);
                   else {
                     controller.nextPage(
                       duration: const Duration(milliseconds: 500),
@@ -123,7 +123,4 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     );
   }
 
-  void onTapBtnIconButton(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.onboardingScreen);
-  }
 }
