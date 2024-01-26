@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/Onboarding%20Page/OnBoardingPage.dart';
 import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
 import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
 import 'package:prescribo/presentation/splash_screen/splash_screen.dart';
@@ -69,9 +70,12 @@ class AppRoutes {
 
   static const String Landingpage = '/Landingpage';
 
+  static const String Onboardingpage = '/OnBoardingPage';
+
   static Map<String, WidgetBuilder> routes = {
     splashScreen: (context) => SplashScreen(),
     onboardingScreen: (context) => OnboardingScreen(),
+    Onboardingpage: (context) => OnBoardingPage(),
     loginScreen: (context) => LoginScreen(),
     loginWrongPasswordScreen: (context) => LoginWrongPasswordScreen(),
     loginCorrectPasswordScreen: (context) => LoginCorrectPasswordScreen(),

@@ -40,6 +40,6 @@ class SplashScreen extends StatelessWidget {
 
   /// Navigates to the onboardingScreen when the action is triggered.
   onTapBtnIconButton(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.onboardingScreen);
+    Navigator.pushNamed(context, AppRoutes.Onboardingpage);
   }
 }
