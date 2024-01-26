@@ -30,6 +30,7 @@ class ProfileMenu extends StatelessWidget {
           children: [
             SvgPicture.asset(
               icon,
+              // ignore: deprecated_member_use
               color: Colors.black, // Change to your desired icon color
               width: 22,
             ),

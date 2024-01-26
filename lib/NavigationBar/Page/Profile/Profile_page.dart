@@ -11,9 +11,9 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
-        title: const Text("Profile"),
-      ),*/
+      appBar: AppBar(
+        title: Center(child: Text("Profile")),
+      ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: Column(
@@ -27,12 +27,12 @@ class ProfileScreen extends StatelessWidget {
             ),
             ProfileMenu(
               text: "Prescriptions",
-              icon: ImageConstant.imgPrescription,
+              icon: ImageConstant.imgPrescriptionAccount,
               press: () {},
             ),
             ProfileMenu(
               text: "Settings",
-              icon: ImageConstant.imgAccount,
+              icon: ImageConstant.imgSettings,
               press: () {},
             ),
             ProfileMenu(

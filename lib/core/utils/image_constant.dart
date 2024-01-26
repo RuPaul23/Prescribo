@@ -111,10 +111,11 @@ class ImageConstant {
   static String imgImage23 = '$imagePath/img_image_23.png';
 
   // Profile images
-  static String imgLogOut = '$imagePath/Danger Circle.png';
-  static String imgHelpCentre = '$imagePath/Chat.png';
-  static String imgAccount = '$imagePath/Account.png';
-  static String imgPrescriptionAccount = '$imagePath/medical-prescription.png';
+  static String imgLogOut = '$imagePath/Danger Circle.svg';
+  static String imgHelpCentre = '$imagePath/Chat.svg';
+  static String imgAccount = '$imagePath/img_user_Profile.svg';
+  static String imgPrescriptionAccount = '$imagePath/prescription-svgrepo-com.svg';
+  static String imgSettings = '$imagePath/settings-svgrepo-com.svg';
 
                                           
 
