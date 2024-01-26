@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-//import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/NavigationBar/home_screen/widgets/homelist_item_widget.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
-import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
-import 'package:prescribo/NavigationBar/remainder_screen/remainder_screen.dart';
+import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
 import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
-//import 'package:prescribo/widgets/custom_image_view.dart';
+import 'package:prescribo/widgets/custom_image_view.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
-import 'package:prescribo/NavigationBar/navigation_bar.dart';
+//import 'package:prescribo/widgets/home_screen/widgets/homelist_item_widget.dart';
+//import 'package:prescribo/widgets/navigation_bar/navigation_bar.dart';
+//import 'package:prescribo/widgets/navigation_bar/navigation_bar_theme.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -25,7 +27,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  final List<Widget> screens = [
+  final List<Widget> _screens = [
     HomeScreen(),
     PrecriptionScreen(),
     ScannerScreen(),
@@ -63,10 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        bottomNavigationBar: CustomBottomNavigationBar(
-          onDestinationSelected: _onDestinationSelected,
-          selectedIndex: _selectedIndex,
-        ),
+        bottomNavigationBar: _buildBottomBar(context),
       ),
     );
   }
@@ -87,7 +86,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //Prescription; Order; Consult; Category
   Widget _buildHomeList(BuildContext context) {
     return SizedBox(
       height: 95.v,
@@ -163,7 +161,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //Banner of Prescribo Widget
   Widget _buildCtaStack(BuildContext context) {
     return SizedBox(
       height: 161.v,
@@ -217,7 +214,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //Current Remainder Widget
   Widget _buildTextRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7.h),
@@ -240,7 +236,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //Pills Remainder Widget
   Widget _buildPillsWhiteRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7.h),
@@ -284,14 +279,12 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               Text(
                                 "08 : 30 AM",
-                                style: CustomTextStyles
-                                    .labelLargeWhiteA700SemiBold,
+                                style: CustomTextStyles.labelLargeWhiteA700SemiBold,
                               ),
                               SizedBox(height: 7.v),
                               Text(
                                 "Vitamin C",
-                                style: CustomTextStyles
-                                    .labelLargeWhiteA700SemiBold,
+                                style: CustomTextStyles.labelLargeWhiteA700SemiBold,
                               ),
                             ],
                           ),
@@ -370,7 +363,6 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  //Tick Widget
   Widget _buildTickOne(BuildContext context,
       {required String tickImage, required String doseText}) {
     return SizedBox(
@@ -394,16 +386,66 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  void _onDestinationSelected(int index) {
-    setState(() {
-      _selectedIndex = index;
-       Navigator.push(
-        context,
-       MaterialPageRoute(
-         builder: (context) => screens[index], // Navigate to the selected screen from _screens list
-       ),
-      );
-    });
+
+//Navigation bar Widget
+  Widget _buildBottomBar(BuildContext context) {
+    return NavigationBarTheme(
+      data: NavigationBarThemeData(
+        indicatorColor: Color.fromARGB(60, 0, 102, 204),
+        labelTextStyle: MaterialStateProperty.all(
+          TextStyle(
+            fontFamily: GoogleFonts.inter().fontFamily,
+            fontSize: 10,
+            fontWeight: FontWeight.w500,
+            color: Color.fromARGB(255, 0, 0, 0),
+          ),
+        ),
+      ),
+      child: NavigationBar(
+        height: 65,
+        backgroundColor: Colors.white,
+        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+        animationDuration: Duration(milliseconds: 500),
+        selectedIndex: _selectedIndex,
+        onDestinationSelected: (index) {
+          setState(() {
+            _selectedIndex = index;
+             Navigator.push(
+              context,
+              MaterialPageRoute(
+              builder: (context) => _screens[index], // Navigate to the selected screen from _screens list
+              ),
+              );
+          });
+        },
+        destinations: [
+          NavigationDestination(
+            icon: Image.asset(ImageConstant.imgHomeBar),
+            //selectedIcon: Image.asset(ImageConstant.imgHomeBarSelected), ->>>>>>>>> Designed for selected icon
+            label: 'Home',
+          ),
+          NavigationDestination(
+            icon: Image.asset(ImageConstant.imgPrescriptionBar),
+            //selectedIcon: Image.asset(ImageConstant.imgPrescriptionBarSelected), ->>>>>>>>> Designed for selected icon
+            label: 'Prescription',
+          ),
+          NavigationDestination(
+            icon: Image.asset(ImageConstant.imgScanner),
+            //selectedIcon: Image.asset(ImageConstant.imgScannerSelected), ->>>>>>>>> Designed for selected icon
+            label: 'Scanner',
+          ),
+          NavigationDestination(
+            icon: Image.asset(ImageConstant.imgCalenderBar),
+            //selectedIcon: Image.asset(ImageConstant.imgCalenderBarSelected), ->>>>>>>>> Designed for selected icon
+            label: 'Calendar',
+          ),
+          NavigationDestination(
+            icon: Image.asset(ImageConstant.imgProfile),
+            //selectedIcon: Image.asset(ImageConstant.imgProfileSelected), ->>>>>>>>> Designed for selected icon
+            label: 'Profile',
+          ),
+        ],
+      ),
+    );
   }
 }
-

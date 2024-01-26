@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
 import 'package:prescribo/presentation/splash_screen/splash_screen.dart';
 import 'package:prescribo/presentation/onboarding_screen/onboarding_screen.dart';
 import 'package:prescribo/presentation/login_screen/login_screen.dart';
@@ -13,7 +14,6 @@ import 'package:prescribo/presentation/create_new_password_screen/create_new_pas
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
 import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/presentation/articles_screen/articles_screen.dart';
-import 'package:prescribo/NavigationBar/remainder_screen/remainder_screen.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
