@@ -106,7 +106,7 @@ class CustomSearchView extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(17.h, 11.v, 12.h, 11.v),
               child: CustomImageView(
-                imagePath: ImageConstant.imgRewind,
+                imagePath: ImageConstant.imgSearch,
                 height: 18.adaptSize,
                 width: 18.adaptSize,
               ),

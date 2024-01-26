@@ -191,6 +191,8 @@ class ImageConstant {
 
   static String rightarrow = '$imagePath/right-arrow (2).png';
 
+  static String imgSearch = '$imagePath/Search.png';
+
 
 
   //Navigation Bar

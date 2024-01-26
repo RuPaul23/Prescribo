@@ -19,6 +19,7 @@ class LandingPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
+        //this function PreferredSizeWidget is used to set the height of the appbar
         appBar: _buildAppBar(context),
         body: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 13),
@@ -43,11 +44,11 @@ class LandingPage extends StatelessWidget {
             ],
           ),
         ),
-        //bottomNavigationBar: _buildBottomBar(context),
       ),
     );
   }
 
+//Headline Prescribo and Notification Icon
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return CustomAppBar(
       height: 65,
@@ -58,12 +59,15 @@ class LandingPage extends StatelessWidget {
       actions: [
         AppbarTrailingImage(
           imagePath: ImageConstant.imgNotification,
-          margin: EdgeInsets.fromLTRB(22, 14, 22, 17),
+          margin: EdgeInsets.fromLTRB(22, 19, 22, 17),
         ),
       ],
     );
   }
 
+
+
+//Prescription, Order, Doctor, Category
   Widget _buildHomeList(BuildContext context) {
     return SizedBox(
       height: 95,
@@ -118,6 +122,8 @@ class LandingPage extends StatelessWidget {
     );
   }
 
+
+//Banner Prescribo
   Widget _buildCtaStack(BuildContext context) {
     return SizedBox(
       height: 161,
@@ -171,6 +177,8 @@ class LandingPage extends StatelessWidget {
     );
   }
 
+
+//Current Remainder
   Widget _buildTextRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7),
@@ -193,6 +201,7 @@ class LandingPage extends StatelessWidget {
     );
   }
 
+//Stack pills
   Widget _buildPillsWhiteRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7),
@@ -320,6 +329,8 @@ class LandingPage extends StatelessWidget {
     );
   }
 
+
+//Tick
   Widget _buildTickOne(BuildContext context,
       {required String tickImage, required String doseText}) {
     return SizedBox(
@@ -345,5 +356,4 @@ class LandingPage extends StatelessWidget {
 
 }
 
-class _buildBottomBar {
-}
+
