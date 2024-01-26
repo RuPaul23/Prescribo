@@ -20,7 +20,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         body: Container(
-          padding: const EdgeInsets.only(bottom: 80),
+          padding: const EdgeInsets.only(bottom: 60),
           child: PageView(
             controller: controller,
             children: [
@@ -76,7 +76,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   count: 3,
                   effect: WormEffect(
                     dotColor: Colors.grey,
-                    activeDotColor: Colors.white,
+                    activeDotColor: Color.fromARGB(255, 63, 125, 240),
                     dotHeight: 10,
                     dotWidth: 10,
                   ),

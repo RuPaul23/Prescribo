@@ -7,39 +7,31 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Adding a delay before navigating
+    Future.delayed(Duration(milliseconds: 5000), () {
+      Navigator.pushNamed(context, AppRoutes.Onboardingpage);
+    });
+
     return SafeArea(
-        child: Scaffold(
-            backgroundColor: appTheme.black900.withOpacity(0.9),
-            body: Container(
-                width: double.maxFinite,
-                padding:
-                    EdgeInsets.symmetric(horizontal: 56.h, vertical: 105.v),
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Spacer(flex: 55),
-                      CustomImageView(
-                          imagePath: ImageConstant.imgLogoNoBackground,
-                          height: 126.adaptSize,
-                          width: 262.adaptSize),
-                      Spacer(flex: 44),
-                      CustomIconButton(
-                          height: 80.adaptSize,
-                          width: 80.adaptSize,
-                          padding: EdgeInsets.all(10.h), //arrow size
-                          decoration: IconButtonStyleHelper.outlineWhiteA,
-                          onTap: () {
-                            onTapBtnIconButton(context);
-                          },
-                          child: CustomImageView(
-                              imagePath: ImageConstant.rightarrow,
-                              )) 
-
-                          ]))));
-  }
-
-  /// Navigates to the onboardingScreen when the action is triggered.
-  onTapBtnIconButton(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.Onboardingpage);
+      child: Scaffold(
+        backgroundColor: appTheme.black900.withOpacity(0.9),
+        body: Container(
+          width: double.maxFinite,
+          padding: EdgeInsets.symmetric(horizontal: 56.h, vertical: 105.v),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Spacer(flex: 55),
+              CustomImageView(
+                imagePath: ImageConstant.imgLogoNoBackground,
+                height: 126.adaptSize,
+                width: 262.adaptSize,
+              ),
+              Spacer(flex: 44),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
