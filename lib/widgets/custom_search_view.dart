@@ -22,7 +22,7 @@ class CustomSearchView extends StatelessWidget {
     this.contentPadding,
     this.borderDecoration,
     this.fillColor,
-    this.filled = false,
+    this.filled = true,
     this.validator,
     this.onChanged,
   }) : super(

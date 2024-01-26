@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/Page/Calender_page.dart';
-import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
-import 'package:prescribo/NavigationBar/home_screen/widgets/homelist_item_widget.dart';
-import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
-import 'package:prescribo/theme/app_decoration.dart';
-import 'package:prescribo/theme/custom_button_style.dart';
-import 'package:prescribo/theme/custom_text_style.dart';
-import 'package:prescribo/theme/theme_helper.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
-import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
 
 class LandingPage extends StatelessWidget {
@@ -72,6 +63,7 @@ class LandingPage extends StatelessWidget {
 //Home List
 Widget _buildHomeList(BuildContext context) {
     return Scaffold(
+      
       
     );
   }
