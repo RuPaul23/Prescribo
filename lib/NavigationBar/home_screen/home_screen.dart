@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:prescribo/NavigationBar/Page/Calender_page.dart';
+import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
+import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
+import 'package:prescribo/NavigationBar/Page/Profile_page.dart';
+import 'package:prescribo/NavigationBar/Page/Scanner_page.dart';
 import 'package:prescribo/core/app_export.dart';
-import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/NavigationBar/home_screen/widgets/homelist_item_widget.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
@@ -24,11 +28,18 @@ class _HomeScreenState extends State<HomeScreen> {
   int index = 0;
 
   final List<Widget> screens = [
+    /*
   Center(child: Text('Home Screen', style: TextStyle(fontSize: 30),)),
   Center(child: Text('Prescription Screen', style: TextStyle(fontSize: 30),)),
   Center(child: Text('Scanner Screen', style: TextStyle(fontSize: 30),)),
   Center(child: Text('Calendar Screen', style: TextStyle(fontSize: 30),)),
-  Center(child: Text('Profile Screen', style: TextStyle(fontSize: 30),)),
+  Center(child: Text('Profile Screen', style: TextStyle(fontSize: 30),)),*/
+
+  LandingPage(),
+  PrescriptionPage(),
+  ScannerPage(),
+  CalendarPage(),
+  ProfilePage(),
   ];
 
   @override
@@ -136,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ConsultScreen(),
+                      builder: (context) => PrecriptionScreen(),
                     ),
                   );
                   break;
@@ -144,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ConsultScreen(),
+                      builder: (context) => PrecriptionScreen(),
                     ),
                   );
                   break;

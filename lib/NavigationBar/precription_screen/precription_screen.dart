@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
@@ -25,11 +24,11 @@ class _PrecriptionScreenState extends State<PrecriptionScreen> {
   int _selectedIndex = 1; // default to the prescription screen
 
   final List<Widget> screens = [
-    HomeScreen(),
+    /*HomeScreen(),
     PrecriptionScreen(),
     ScannerScreen(),
     RemainderScreen(),
-    ProfileScreen(),
+    ProfileScreen(),*/
   ];
 
   @override

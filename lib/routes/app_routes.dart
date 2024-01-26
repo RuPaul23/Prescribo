@@ -12,10 +12,8 @@ import 'package:prescribo/presentation/reset_password_phone_tab_container_screen
 import 'package:prescribo/presentation/reset_password_verify_code_screen/reset_password_verify_code_screen.dart';
 import 'package:prescribo/presentation/create_new_password_screen/create_new_password_screen.dart';
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
-import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/presentation/articles_screen/articles_screen.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
-import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/presentation/app_navigation_screen/app_navigation_screen.dart';
 
@@ -80,11 +78,11 @@ class AppRoutes {
     resetPasswordVerifyCodeScreen: (context) => ResetPasswordVerifyCodeScreen(),
     createNewPasswordScreen: (context) => CreateNewPasswordScreen(),
     homeScreen: (context) => HomeScreen(),
-    consultScreen: (context) => ConsultScreen(),
+    //consultScreen: (context) => ConsultScreen(),
     articlesScreen: (context) => ArticlesScreen(),
     remainderScreen: (context) => RemainderScreen(),
     precriptionScreen: (context) => PrecriptionScreen(),
-    scannerScreen: (context) => ScannerScreen(),
+    //scannerScreen: (context) => ScannerScreen(),
     profileScreen: (context) => ProfileScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };
