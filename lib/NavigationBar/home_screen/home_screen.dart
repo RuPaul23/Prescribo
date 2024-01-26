@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/NavigationBar/home_screen/widgets/homelist_item_widget.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
-import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
-import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
-import 'package:prescribo/widgets/custom_image_view.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
 //import 'package:prescribo/widgets/home_screen/widgets/homelist_item_widget.dart';
 //import 'package:prescribo/widgets/navigation_bar/navigation_bar.dart';
@@ -25,14 +21,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 0;
+  int index = 0;
 
-  final List<Widget> _screens = [
-    HomeScreen(),
-    PrecriptionScreen(),
-    ScannerScreen(),
-    RemainderScreen(),
-    ProfileScreen(),
+  final List<Widget> screens = [
+  Center(child: Text('Home Screen', style: TextStyle(fontSize: 30),)),
+  Center(child: Text('Prescription Screen', style: TextStyle(fontSize: 30),)),
+  Center(child: Text('Scanner Screen', style: TextStyle(fontSize: 30),)),
+  Center(child: Text('Calendar Screen', style: TextStyle(fontSize: 30),)),
+  Center(child: Text('Profile Screen', style: TextStyle(fontSize: 30),)),
   ];
 
   @override
@@ -388,8 +384,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
 //Navigation bar Widget
-  Widget _buildBottomBar(BuildContext context) {
-    return NavigationBarTheme(
+  Widget _buildBottomBar(BuildContext context) => Scaffold(
+    body: screens[index],
+    bottomNavigationBar: NavigationBarTheme(
       data: NavigationBarThemeData(
         indicatorColor: Color.fromARGB(60, 0, 102, 204),
         labelTextStyle: MaterialStateProperty.all(
@@ -406,17 +403,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white,
         labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         animationDuration: Duration(milliseconds: 500),
-        selectedIndex: _selectedIndex,
+        selectedIndex: index,
         onDestinationSelected: (index) {
-          setState(() {
-            _selectedIndex = index;
-             Navigator.push(
-              context,
-              MaterialPageRoute(
-              builder: (context) => _screens[index], // Navigate to the selected screen from _screens list
-              ),
-              );
-          });
+          setState(() =>this.index =index);
         },
         destinations: [
           NavigationDestination(
@@ -446,6 +435,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-    );
-  }
+    ),
+  );
 }
