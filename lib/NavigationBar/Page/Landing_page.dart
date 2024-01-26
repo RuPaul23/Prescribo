@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/ListBar/CircleList/CircleList.dart';
-import 'package:prescribo/NavigationBar/ListBar/CircleList/homelist_item_widget.dart';
+import 'package:prescribo/NavigationBar/ListBar/CircleList/List_item_widget.dart';
+import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
@@ -84,7 +84,7 @@ Widget _buildHomeList(BuildContext context) {
       },
       itemCount: 4,
       itemBuilder: (context, index) {
-        return HomelistItemWidget(
+        return listItemWidget(
           onTapList: () {
             // Navigate to different screens based on the index
             switch (index) {
@@ -92,7 +92,7 @@ Widget _buildHomeList(BuildContext context) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PrecriptionScreen(),
+                    builder: (context) => PrescriptionPage(),
                   ),
                 );
                 break;

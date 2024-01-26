@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart'; // Import the lottie package
 import 'package:prescribo/routes/app_routes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -23,23 +24,38 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           child: PageView(
             controller: controller,
             children: [
-              Container(
-                color: Color.fromARGB(255, 255, 108, 17),
-                child: const Center(
-                  child: Text('Page1'),
+              // Page 1 with Lottie animation
+              _buildPage(
+                backgroundColor: Color.fromARGB(255, 255, 255, 255),
+                child: Lottie.network(
+                  'https://lottie.host/107f35f2-e4ba-4246-a798-83d178f43c3a/GHGO7v7YGO.json',
+                  height: 300,
+                  width: 300,
+                  fit: BoxFit.cover,
                 ),
+                text: 'Page 1',
               ),
-              Container(
-                color: Color.fromARGB(255, 116, 234, 255),
-                child: const Center(
-                  child: Text('Page 2'),
+              // Page 2 with Lottie animation
+              _buildPage(
+                backgroundColor: Color.fromARGB(255, 116, 234, 255),
+                child: Lottie.network(
+                  'https://lottie.host/22785cc3-38e4-48bf-895d-d15c13bf0fa6/ElJv16ajKG.json',
+                  height: 300,
+                  width: 300,
+                  fit: BoxFit.cover,
                 ),
+                text: 'Page 2',
               ),
-              Container(
-                color: Color.fromARGB(255, 92, 255, 17),
-                child: const Center(
-                  child: Text('Page 3'),
+              // Page 3 with Lottie animation
+              _buildPage(
+                backgroundColor: Color.fromARGB(255, 255, 255, 255),
+                child: Lottie.network(
+                  'https://lottie.host/a2087a7a-101c-4723-8490-f3ade33e4192/7wU0kwBN0N.json',
+                  height: 300,
+                  width: 300,
+                  fit: BoxFit.cover,
                 ),
+                text: 'Page 3',
               ),
             ],
           ),
@@ -75,12 +91,12 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 child: const Text('Next'),
                 onPressed: () {
                   if (controller.page!.toInt() == 2)
-                  controller.nextPage(
-                    duration: const Duration(milliseconds: 500),
-                    curve: Curves.easeInOut,
-                  );
-                  else{
                     onTapBtnIconButton(context);
+                  else {
+                    controller.nextPage(
+                      duration: const Duration(milliseconds: 500),
+                      curve: Curves.easeInOut,
+                    );
                   }
                 },
               ),
@@ -88,6 +104,24 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ),
         ),
       );
+
+  Widget _buildPage({
+    required Color backgroundColor,
+    required Widget child,
+    required String text,
+  }) {
+    return Container(
+      color: backgroundColor,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          child,
+          const SizedBox(height: 20),
+          Text(text),
+        ],
+      ),
+    );
+  }
 
   void onTapBtnIconButton(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.onboardingScreen);

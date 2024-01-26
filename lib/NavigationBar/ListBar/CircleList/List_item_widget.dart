@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/widgets/custom_icon_button.dart';
 
-class HomelistItemWidget extends StatelessWidget {
+// ignore: camel_case_types
+class listItemWidget extends StatelessWidget {
   final VoidCallback? onTapList;
   final String imagePath;
   final String text;
 
-  const HomelistItemWidget({
+  const listItemWidget({
     Key? key,
     this.onTapList,
     required this.imagePath,
