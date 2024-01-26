@@ -7,6 +7,7 @@ import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_outlined_button.dart';
 import 'package:prescribo/widgets/custom_text_form_field.dart';
 
+// ignore: must_be_immutable
 class LoginWrongPasswordScreen extends StatelessWidget {
   LoginWrongPasswordScreen({Key? key})
       : super(

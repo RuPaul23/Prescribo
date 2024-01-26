@@ -4,14 +4,12 @@ import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/NavigationBar/remainder_screen/remainder_screen.dart';
-import 'package:prescribo/presentation/scanner_screen/scanner_screen.dart';
+import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/widgets/app_bar/appbar_leading_image.dart';
 import 'package:prescribo/widgets/app_bar/appbar_subtitle.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
-//import 'package:prescribo/widgets/navigation_bar.dart';
-
 import '../precription_screen/widgets/userprofile1_item_widget.dart';
 
 class PrecriptionScreen extends StatefulWidget {

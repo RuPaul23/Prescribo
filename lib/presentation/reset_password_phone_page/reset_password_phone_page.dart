@@ -22,6 +22,7 @@ class ResetPasswordPhonePageState extends State<ResetPasswordPhonePage>
 
   @override
   bool get wantKeepAlive => true;
+  // ignore: must_call_super
   @override
   Widget build(BuildContext context) {
     return SafeArea(

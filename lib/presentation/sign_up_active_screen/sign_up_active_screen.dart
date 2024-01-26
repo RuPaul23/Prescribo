@@ -7,6 +7,7 @@ import 'package:prescribo/widgets/custom_checkbox_button.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_text_form_field.dart';
 
+// ignore: must_be_immutable
 class SignUpActiveScreen extends StatelessWidget {
   SignUpActiveScreen({Key? key})
       : super(

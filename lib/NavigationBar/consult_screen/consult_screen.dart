@@ -7,6 +7,7 @@ import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
 
+// ignore: must_be_immutable
 class ConsultScreen extends StatelessWidget {
   ConsultScreen({Key? key})
       : super(

@@ -12,6 +12,9 @@ dependencies:
   intl: ^0.18.0
   google_fonts: ^6.1.0
   rive: ^0.12.4
+  flutter_barcode_scanner: ^2.0.0
+  image_picker: ^0.8.4+4
+  pdf: 3.10.7
 dev_dependencies: 
   flutter_test: 
     sdk: flutter

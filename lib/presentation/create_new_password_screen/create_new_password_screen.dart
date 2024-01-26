@@ -5,6 +5,7 @@ import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_text_form_field.dart';
 
+// ignore: must_be_immutable
 class CreateNewPasswordScreen extends StatelessWidget {
   CreateNewPasswordScreen({Key? key})
       : super(

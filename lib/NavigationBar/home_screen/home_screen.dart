@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/consult_screen/consult_screen.dart';
 import 'package:prescribo/NavigationBar/home_screen/widgets/homelist_item_widget.dart';
 import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
 import 'package:prescribo/NavigationBar/remainder_screen/remainder_screen.dart';
-import 'package:prescribo/presentation/scanner_screen/scanner_screen.dart';
+import 'package:prescribo/NavigationBar/scanner_screen/scanner_screen.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
 import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
-import 'package:prescribo/widgets/custom_image_view.dart';
+//import 'package:prescribo/widgets/custom_image_view.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
 import 'package:prescribo/NavigationBar/navigation_bar.dart';
 
