@@ -44,7 +44,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   width: 300,
                   fit: BoxFit.cover,
                 ),
-                text: 'Page 2',
+                text: 'Getting Started with Prescribo',
               ),
               // Page 3 with Lottie animation
               _buildPage(
@@ -55,7 +55,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   width: 300,
                   fit: BoxFit.cover,
                 ),
-                text: 'Page 3',
+                text: 'Effortless Prescription & Health Management',
               ),
             ],
           ),
