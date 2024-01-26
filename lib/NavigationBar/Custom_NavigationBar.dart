@@ -45,7 +45,7 @@ class CustomNavigationState extends State<CustomnavigationBar> {
             fontFamily: GoogleFonts.inter().fontFamily,
             fontSize: 10,
             fontWeight: FontWeight.w500,
-            color: Color.fromARGB(255, 0, 0, 0),
+            color: Color.fromARGB(255, 151, 149, 149),
           ),
         ),
       ),

@@ -1,33 +1,23 @@
 import 'package:flutter/material.dart';
-
+import 'package:prescribo/NavigationBar/ListBar/VerticalList.dart';
 
 class PrescriptionPage extends StatelessWidget {
+  final List _prescription = [
+    'Prescription 1',
+    'Prescription 2',
+    'Prescription 3',
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Screen'),
+        title: Text('Prescribo Screen'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Welcome to Prescription Page!',
-              style: TextStyle(
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 20.0),
-            ElevatedButton(
-              onPressed: () {
-                // Add your button functionality here
-              },
-              child: Text('Press Me'),
-            ),
-          ],
-        ),
+      body: ListView.builder(
+        itemCount: _prescription.length,
+        itemBuilder: (context, index) {
+          return VerticalList(child: _prescription[index],);
+        },
       ),
     );
   }
