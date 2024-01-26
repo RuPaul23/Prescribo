@@ -33,7 +33,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   width: 300,
                   fit: BoxFit.cover,
                 ),
-                text: 'Page 1',
+                text: 'Welcome to Prescribo',
               ),
               // Page 2 with Lottie animation
               _buildPage(

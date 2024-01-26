@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prescribo/core/app_export.dart';
-import 'package:prescribo/widgets/custom_icon_button.dart';
+
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        backgroundColor: appTheme.black900.withOpacity(0.9),
+        backgroundColor: appTheme.blue100.withOpacity(0.9),
         body: Container(
           width: double.maxFinite,
           padding: EdgeInsets.symmetric(horizontal: 56.h, vertical: 105.v),

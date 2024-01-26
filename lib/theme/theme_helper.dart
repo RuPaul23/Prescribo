@@ -192,6 +192,9 @@ class PrimaryColors {
   // Black
   Color get black900 => Color.fromRGBO(0, 102, 204, 1);
 
+  // Blue
+  Color get blue100 => Color.fromARGB(255, 56, 122, 255);
+
   // BlueGray
   Color get blueGray100 => Color(0XFFD3D6DA);
   Color get blueGray300 => Color(0XFFA0A7B0);
