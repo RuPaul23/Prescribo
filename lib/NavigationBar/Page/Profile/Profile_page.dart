@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/Custom_NavigationBar.dart';
+import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
 import 'package:prescribo/NavigationBar/Page/Profile/Profile_Menu.dart';
 import 'package:prescribo/NavigationBar/Page/Profile/Profile_Pic.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
@@ -12,12 +14,23 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:  Text("Profile"),
+        title: Text("Profile"),
+        /*leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CustomnavigationBar(),
+                  ),
+                );
+          },
+        ),*/
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center, // Align children at the start (left)
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
               child: ProfilePic(),
