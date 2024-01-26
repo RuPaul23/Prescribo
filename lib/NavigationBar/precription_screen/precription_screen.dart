@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/navigation_bar.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
 import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
@@ -58,7 +59,10 @@ class _PrecriptionScreenState extends State<PrecriptionScreen> {
             ],
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(context),
+        bottomNavigationBar: CustomBottomNavigationBar(
+          onDestinationSelected: _onDestinationSelected,
+          selectedIndex: _selectedIndex,
+        ),
       ),
     );
   }
@@ -132,7 +136,8 @@ class _PrecriptionScreenState extends State<PrecriptionScreen> {
     );
   }
 
-  Widget _buildBottomBar(BuildContext context) {
+  // Bottom Navigation Bar
+  /*Widget _buildBottomBar(BuildContext context) {
     return NavigationBarTheme(
       data: NavigationBarThemeData(
         indicatorColor: Color.fromARGB(60, 0, 102, 204),
@@ -181,5 +186,17 @@ class _PrecriptionScreenState extends State<PrecriptionScreen> {
         ],
       ),
     );
+  }*/
+
+  void _onDestinationSelected(int index) {
+    setState(() {
+      _selectedIndex = index;
+       Navigator.push(
+        context,
+       MaterialPageRoute(
+         builder: (context) => screens[index], // Navigate to the selected screen from _screens list
+       ),
+      );
+    });
   }
 }

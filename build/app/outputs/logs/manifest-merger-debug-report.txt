@@ -7,6 +7,7 @@ INJECTED from D:\Desktop\Projects\prescribo-v1.0.1\android\app\src\main\AndroidM
 MERGED from D:\Desktop\Projects\prescribo-v1.0.1\android\app\src\main\AndroidManifest.xml:1:1-47:12
 MERGED from [:sqflite] D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\paulr\.gradle\caches\transforms-3\08a794a3f2f3970abb63093256f3a7ff\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\paulr\.gradle\caches\transforms-3\6f3c94bc7e415994af128d830fc65f80\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\paulr\.gradle\caches\transforms-3\577b1fcf78d280816bbd01e33e5a4586\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -107,6 +108,8 @@ MERGED from [:sqflite] D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\interm
 MERGED from [:sqflite] D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\paulr\.gradle\caches\transforms-3\08a794a3f2f3970abb63093256f3a7ff\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\paulr\.gradle\caches\transforms-3\08a794a3f2f3970abb63093256f3a7ff\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\paulr\.gradle\caches\transforms-3\6f3c94bc7e415994af128d830fc65f80\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41

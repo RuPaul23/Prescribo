@@ -13,7 +13,7 @@ import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
 import 'package:prescribo/widgets/custom_image_view.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
-
+import 'package:prescribo/NavigationBar/navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  final List<Widget> _screens = [
+  final List<Widget> screens = [
     HomeScreen(),
     PrecriptionScreen(),
     ScannerScreen(),
@@ -63,7 +63,10 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(context),
+        bottomNavigationBar: CustomBottomNavigationBar(
+          onDestinationSelected: _onDestinationSelected,
+          selectedIndex: _selectedIndex,
+        ),
       ),
     );
   }
@@ -84,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-//Prescription; Order; Consult; Category
+  //Prescription; Order; Consult; Category
   Widget _buildHomeList(BuildContext context) {
     return SizedBox(
       height: 95.v,
@@ -160,8 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-
-//Banner of Prescribo Widget
+  //Banner of Prescribo Widget
   Widget _buildCtaStack(BuildContext context) {
     return SizedBox(
       height: 161.v,
@@ -215,8 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-
-//Current Remainder Widget
+  //Current Remainder Widget
   Widget _buildTextRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7.h),
@@ -239,8 +240,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-
-//Pills Remainder Widget
+  //Pills Remainder Widget
   Widget _buildPillsWhiteRow(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 7.h),
@@ -370,8 +370,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-
-//Tick Widget
+  //Tick Widget
   Widget _buildTickOne(BuildContext context,
       {required String tickImage, required String doseText}) {
     return SizedBox(
@@ -395,73 +394,16 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-
-//Navigation bar Widget
-  Widget _buildBottomBar(BuildContext context) {
-    return NavigationBarTheme(
-      data: NavigationBarThemeData(
-        indicatorColor: Color.fromARGB(60, 0, 102, 204),
-        labelTextStyle: MaterialStateProperty.all(
-          TextStyle(
-            fontFamily: GoogleFonts.inter().fontFamily,
-            fontSize: 10,
-            fontWeight: FontWeight.w500,
-            color: Color.fromARGB(255, 0, 0, 0),
-          ),
-        ),
-      ),
-      child: NavigationBar(
-        height: 65,
-        backgroundColor: Colors.white,
-        labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
-        animationDuration: Duration(milliseconds: 500),
-        selectedIndex: _selectedIndex,
-        onDestinationSelected: (index) {
-          setState(() {
-            _selectedIndex = index;
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => _screens[
-                    index], // Navigate to the selected screen from _screens list
-              ),
-            );
-          });
-        },
-        destinations: [
-          NavigationDestination(
-            icon: Image.asset(ImageConstant.imgHomeBar),
-            //selectedIcon: Image.asset(ImageConstant.imgHomeBarSelected), ->>>>>>>>> Designed for selected icon
-            label: 'Home',
-          ),
-          NavigationDestination(
-            icon: Image.asset(ImageConstant.imgPrescriptionBar),
-            //selectedIcon: Image.asset(ImageConstant.imgPrescriptionBarSelected), ->>>>>>>>> Designed for selected icon
-            label: 'Prescription',
-          ),
-          NavigationDestination(
-            icon: Image.asset(ImageConstant.imgScanner),
-            //selectedIcon: Image.asset(ImageConstant.imgScannerSelected), ->>>>>>>>> Designed for selected icon
-            label: 'Scanner',
-          ),
-          NavigationDestination(
-            icon: Image.asset(ImageConstant.imgCalenderBar),
-            //selectedIcon: Image.asset(ImageConstant.imgCalenderBarSelected), ->>>>>>>>> Designed for selected icon
-            label: 'Calendar',
-          ),
-          NavigationDestination(
-            icon: Image.asset(ImageConstant.imgProfile),
-            //selectedIcon: Image.asset(ImageConstant.imgProfileSelected), ->>>>>>>>> Designed for selected icon
-            label: 'Profile',
-          ),
-        ],
-      ),
-    );
+  void _onDestinationSelected(int index) {
+    setState(() {
+      _selectedIndex = index;
+       Navigator.push(
+        context,
+       MaterialPageRoute(
+         builder: (context) => screens[index], // Navigate to the selected screen from _screens list
+       ),
+      );
+    });
   }
-
-
-
-
-
-
 }
+
