@@ -138,6 +138,8 @@ class ImageConstant {
 
   static String imgCamera = '$imagePath/img_camera.svg';
 
+  static String imgCameraProfile = '$imagePath/camera-svgrepo-com.svg';
+
   static String imgGroup33 = '$imagePath/img_group_33.png';
 
   static String imgSettings43x43 = '$imagePath/img_settings_43x43.svg';

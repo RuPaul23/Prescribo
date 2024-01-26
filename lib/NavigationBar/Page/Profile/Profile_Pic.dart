@@ -26,10 +26,10 @@ class ProfilePic extends StatelessWidget {
           ),
           Positioned(
             right: -16,
-            bottom: 0,
+            bottom: -5,
             child: SizedBox(
-              height: 46,
-              width: 46,
+              height: 50,
+              width: 50,
               child: TextButton(
                 style: TextButton.styleFrom(
                   foregroundColor: Colors.white,
@@ -40,7 +40,7 @@ class ProfilePic extends StatelessWidget {
                   backgroundColor: const Color(0xFFF5F6F9),
                 ),
                 onPressed: () {},
-                child: SvgPicture.asset(ImageConstant.imgCamera),
+                child: SvgPicture.asset(ImageConstant.imgCameraProfile),
               ),
             ),
           )

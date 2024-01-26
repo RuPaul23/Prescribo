@@ -12,13 +12,16 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Profile")),
+        title:  Text("Profile"),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(vertical: 20),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center, // Align children at the start (left)
           children: [
-            const ProfilePic(),
+            Center(
+              child: ProfilePic(),
+            ),
             const SizedBox(height: 20),
             ProfileMenu(
               text: "My Account",
