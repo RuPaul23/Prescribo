@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/ListBar/CircleList/CircleList.dart';
+import 'package:prescribo/NavigationBar/ListBar/CircleList/homelist_item_widget.dart';
+import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';
@@ -6,12 +9,14 @@ import 'package:prescribo/widgets/app_bar/custom_app_bar.dart';
 import 'package:prescribo/widgets/custom_search_view.dart';
 
 class LandingPage extends StatelessWidget {
+  final List<String> horizonList = ['H1', 'H2', 'H3', 'H4', 'H5'];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
-        //this function PreferredSizeWidget is used to set the height of the appbar
+        //Prescibo Title
         appBar: _buildAppBar(context),
         body: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 13),
@@ -26,13 +31,9 @@ class LandingPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 18),
+              //Home List
               _buildHomeList(context),
               SizedBox(height: 9),
-              /*_buildCtaStack(context),
-              SizedBox(height: 2),
-              _buildTextRow(context),
-              SizedBox(height: 13),
-              _buildPillsWhiteRow(context),*/
             ],
           ),
         ),
@@ -40,7 +41,7 @@ class LandingPage extends StatelessWidget {
     );
   }
 
-//Headline Prescribo and Notification Icon
+//Prescibo Title
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return CustomAppBar(
       height: 65,
@@ -57,29 +58,80 @@ class LandingPage extends StatelessWidget {
     );
   }
 
-
-
-
 //Home List
 Widget _buildHomeList(BuildContext context) {
-    return Scaffold(
-      
-      
-    );
-  }
+  List<String> imagePaths = [
+    ImageConstant.imgPrescription,
+    ImageConstant.imgOrder,
+    ImageConstant.imgDoctor,
+    ImageConstant.imgCategory,
+  ];
 
+  List<String> textLabels = [
+    "Prescription",
+    "Order",
+    "Consult",
+    "Category",
+  ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  return SizedBox(
+    height: 95,
+    child: ListView.separated(
+      padding: EdgeInsets.symmetric(horizontal: 13),
+      scrollDirection: Axis.horizontal,
+      separatorBuilder: (context, index) {
+        return SizedBox(width: 18);
+      },
+      itemCount: 4,
+      itemBuilder: (context, index) {
+        return HomelistItemWidget(
+          onTapList: () {
+            // Navigate to different screens based on the index
+            switch (index) {
+              case 0:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PrecriptionScreen(),
+                  ),
+                );
+                break;
+              case 1:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PrecriptionScreen(),
+                  ),
+                );
+                break;
+              case 2:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PrecriptionScreen(),
+                  ),
+                );
+                break;
+              case 3:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PrecriptionScreen(),
+                  ),
+                );
+                break;
+              default:
+            }
+          },
+          imagePath: imagePaths[index],
+          text: textLabels[index], // Set text label based on index
+        );
+      },
+    ),
+  );
 }
+
+
+}
+
+

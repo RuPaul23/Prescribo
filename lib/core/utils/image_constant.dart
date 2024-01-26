@@ -29,9 +29,6 @@ class ImageConstant {
   // 15_Reset Password - Phone images
   static String imgIconCall = '$imagePath/img_icon_call.svg';
 
-
-
-
   // Home images
   static String imgNotification = '$imagePath/notification-bell.png';
 
@@ -39,10 +36,7 @@ class ImageConstant {
 
   static String imgOrder = '$imagePath/img_group_9.png';
 
-  static String imgCategory = '$imagePath/RightGo.png';
-
-
-
+  static String imgCategory = '$imagePath/Category.png';
 
 //Other
   static String imgMedicalPrescriptionRafiki =
@@ -179,7 +173,7 @@ class ImageConstant {
 
   static String imgIconChevronLeftOnprimary =
       '$imagePath/img_icon_chevron_left_onprimary.svg';
-  
+
   static String imgArrowRightOpen = '$imagePath/arrowRight.png';
 
   static String imgRewind = '$imagePath/img_rewind.svg';
@@ -199,8 +193,6 @@ class ImageConstant {
   static String rightarrow = '$imagePath/right-arrow (2).png';
 
   static String imgSearch = '$imagePath/Search.png';
-
-
 
   //Navigation Bar
   static String imgHomeBar = '$imagePath/Home.png';
