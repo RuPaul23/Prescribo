@@ -17,14 +17,14 @@ import 'package:prescribo/widgets/custom_search_view.dart';
 //import 'package:prescribo/widgets/navigation_bar/navigation_bar.dart';
 //import 'package:prescribo/widgets/navigation_bar/navigation_bar_theme.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class CustomnavigationBar extends StatefulWidget {
+  const CustomnavigationBar({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<CustomnavigationBar> {
   int index = 0;
 
   final List<Widget> screens = [

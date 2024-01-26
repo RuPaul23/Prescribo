@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
 import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
 import 'package:prescribo/presentation/splash_screen/splash_screen.dart';
 import 'package:prescribo/presentation/onboarding_screen/onboarding_screen.dart';
@@ -64,6 +65,10 @@ class AppRoutes {
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
+  static const String CustomNavBar = '/CustomNavBar';
+
+  static const String Landingpage = '/Landingpage';
+
   static Map<String, WidgetBuilder> routes = {
     splashScreen: (context) => SplashScreen(),
     onboardingScreen: (context) => OnboardingScreen(),
@@ -77,7 +82,8 @@ class AppRoutes {
         ResetPasswordPhoneTabContainerScreen(),
     resetPasswordVerifyCodeScreen: (context) => ResetPasswordVerifyCodeScreen(),
     createNewPasswordScreen: (context) => CreateNewPasswordScreen(),
-    homeScreen: (context) => HomeScreen(),
+    Landingpage: (context) => LandingPage(),
+    CustomNavBar:(context) => CustomnavigationBar(),
     //consultScreen: (context) => ConsultScreen(),
     articlesScreen: (context) => ArticlesScreen(),
     remainderScreen: (context) => RemainderScreen(),

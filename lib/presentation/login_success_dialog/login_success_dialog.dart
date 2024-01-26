@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
 import 'package:prescribo/core/app_export.dart';
 import 'package:prescribo/NavigationBar/home_screen/home_screen.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
@@ -70,7 +71,7 @@ class LoginSuccessDialog extends StatelessWidget {
              onPressed: () {
           // Navigate to the home page when the button is pressed
           Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomeScreen()),
+            MaterialPageRoute(builder: (context) => CustomnavigationBar()),
           );
         },
           ),
