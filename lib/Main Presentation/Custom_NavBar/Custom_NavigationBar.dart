@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:prescribo/NavigationBar/Page/Calender_page.dart';
-import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
-import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
-import 'package:prescribo/NavigationBar/Page/Profile/Profile_page.dart';
-import 'package:prescribo/NavigationBar/Page/Scanner_page.dart';
+import 'package:prescribo/Main%20Presentation/Page/Calender_page.dart';
+import 'package:prescribo/Main%20Presentation/Page/Landing_page.dart';
+import 'package:prescribo/Main%20Presentation/Page/Prescription_page.dart';
+import 'package:prescribo/Main%20Presentation/Page/Profile/Profile_page.dart';
+import 'package:prescribo/Main%20Presentation/Scanner%20Page/Camera_Screen.dart';
 import 'package:prescribo/core/app_export.dart';
 
 class CustomnavigationBar extends StatefulWidget {
@@ -20,7 +20,8 @@ class CustomNavigationState extends State<CustomnavigationBar> {
   final List<Widget> screens = [
     LandingPage(),
     PrescriptionPage(),
-    ScannerPage(),
+    CameraScreen(),
+    //ScannerPage(),
     CalendarPage(),
     ProfileScreen(),
   ];

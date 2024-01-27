@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/ListBar/CircleList/List_item_widget.dart';
-import 'package:prescribo/NavigationBar/Page/Prescription_page.dart';
-import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
+import 'package:prescribo/Main%20Presentation/ListBar/CircleList/List_item_widget.dart';
+import 'package:prescribo/Main%20Presentation/Page/Prescription_page.dart';
+import 'package:prescribo/Main%20Presentation/precription_screen/precription_screen.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
 import 'package:prescribo/widgets/app_bar/appbar_title.dart';
 import 'package:prescribo/widgets/app_bar/appbar_trailing_image.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prescribo/core/app_export.dart';
-import 'package:prescribo/NavigationBar/Custom_NavigationBar.dart';
+import 'package:prescribo/Main%20Presentation/Custom_NavBar/Custom_NavigationBar.dart';
 import 'package:prescribo/widgets/custom_elevated_button.dart';
 
 // ignore_for_file: must_be_immutable

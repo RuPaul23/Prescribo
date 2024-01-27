@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/Page/Profile/Profile_Menu.dart';
-import 'package:prescribo/NavigationBar/Page/Profile/Profile_Pic.dart';
+import 'package:prescribo/Main%20Presentation/Page/Profile/Profile_Menu.dart';
+import 'package:prescribo/Main%20Presentation/Page/Profile/Profile_Pic.dart';
 import 'package:prescribo/core/utils/image_constant.dart';
 
 class ProfileScreen extends StatelessWidget {

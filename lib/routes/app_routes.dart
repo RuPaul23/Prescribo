@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/Onboarding%20Page/OnBoardingPage.dart';
-import 'package:prescribo/NavigationBar/Page/Landing_page.dart';
+import 'package:prescribo/Main%20Presentation/Onboarding%20Page/OnBoardingPage.dart';
+import 'package:prescribo/Main%20Presentation/Page/Landing_page.dart';
 import 'package:prescribo/presentation/remainder_screen/remainder_screen.dart';
-import 'package:prescribo/NavigationBar/SplashScreen/splash_screen.dart';
+import 'package:prescribo/Main%20Presentation/SplashScreen/splash_screen.dart';
 import 'package:prescribo/presentation/LogIn&Sign/LogIn&Sign.dart';
 import 'package:prescribo/presentation/login_screen/login_screen.dart';
 import 'package:prescribo/presentation/login_wrong_password_screen/login_wrong_password_screen.dart';
@@ -13,10 +13,10 @@ import 'package:prescribo/presentation/sign_up_correct_password_screen/sign_up_c
 import 'package:prescribo/presentation/reset_password_phone_tab_container_screen/reset_password_phone_tab_container_screen.dart';
 import 'package:prescribo/presentation/reset_password_verify_code_screen/reset_password_verify_code_screen.dart';
 import 'package:prescribo/presentation/create_new_password_screen/create_new_password_screen.dart';
-import 'package:prescribo/NavigationBar/Custom_NavigationBar.dart';
+import 'package:prescribo/Main%20Presentation/Custom_NavBar/Custom_NavigationBar.dart';
 import 'package:prescribo/presentation/articles_screen/articles_screen.dart';
-import 'package:prescribo/NavigationBar/precription_screen/precription_screen.dart';
-import 'package:prescribo/NavigationBar/profile_screen/profile_screen.dart';
+import 'package:prescribo/Main%20Presentation/precription_screen/precription_screen.dart';
+import 'package:prescribo/Main%20Presentation/profile_screen/profile_screen.dart';
 import 'package:prescribo/presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {

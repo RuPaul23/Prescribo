@@ -1,5 +1,5 @@
   import 'package:flutter/material.dart';
-import 'package:prescribo/NavigationBar/ListBar/VerticalList.dart';
+import 'package:prescribo/Main%20Presentation/ListBar/VerticalList.dart';
 
 class PrescriptionPage extends StatelessWidget {
   final List _prescription = [
