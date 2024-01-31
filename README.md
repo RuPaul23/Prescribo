@@ -55,11 +55,11 @@ After successful build, your application structure should look like this:
 
 ## Installation
 
-Currently it is in Prototype
+Currently it is in Prototype. Stay Tune for Version 2.0!
 
 ## Contributing
 
 We welcome contributions from the community. If you would like to contribute to Prescribo.
 
 Prescribo is dedicated to providing a seamless healthcare experience, enhancing patient care, and embracing the digital transformation of healthcare services. Join us in making healthcare management more accessible and efficient!
->>>>>>> cc01014026533a198d4d016050764222e664de39
+
