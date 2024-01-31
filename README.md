@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Prescribo
 
 Prescribo is a healthcare management system designed to simplify the prescription process, offering convenience, efficiency, and a paperless experience for both healthcare providers and patients.
