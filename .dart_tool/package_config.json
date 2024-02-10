@@ -75,7 +75,7 @@
     },
     {
       "name": "camera_platform_interface",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/camera_platform_interface-2.7.2",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/camera_platform_interface-2.7.3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -237,7 +237,7 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.1.4",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.1.6",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -471,13 +471,13 @@
     },
     {
       "name": "sqflite",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.3.1",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.3.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "sqflite_common",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.0+2",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -537,19 +537,19 @@
     },
     {
       "name": "vector_graphics",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics-1.1.9+2",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics-1.1.10+1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "vector_graphics_codec",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_codec-1.1.9+2",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_codec-1.1.10+1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "vector_graphics_compiler",
-      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+2",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_compiler-1.1.10+1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -590,7 +590,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2024-01-27T00:06:52.280607Z",
+  "generated": "2024-02-10T20:22:50.481749Z",
   "generator": "pub",
   "generatorVersion": "3.2.4"
 }
