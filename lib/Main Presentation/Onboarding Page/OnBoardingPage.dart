@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart'; // Import the lottie package
+import 'package:lottie/lottie.dart';
 import 'package:prescribo/routes/app_routes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -27,34 +27,19 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               // Page 1 with Lottie animation
               _buildPage(
                 backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                child: Lottie.network(
-                  'https://lottie.host/107f35f2-e4ba-4246-a798-83d178f43c3a/GHGO7v7YGO.json',
-                  height: 300,
-                  width: 300,
-                  fit: BoxFit.cover,
-                ),
+                assetPath: 'assets/animation/onloading_1.json',
                 text: 'Welcome to Prescribo',
               ),
               // Page 2 with Lottie animation
               _buildPage(
                 backgroundColor: Color.fromARGB(255, 116, 234, 255),
-                child: Lottie.network(
-                  'https://lottie.host/22785cc3-38e4-48bf-895d-d15c13bf0fa6/ElJv16ajKG.json',
-                  height: 300,
-                  width: 300,
-                  fit: BoxFit.cover,
-                ),
+                assetPath: 'assets/animation/onloading_2.json',
                 text: 'Getting Started with Prescribo',
               ),
               // Page 3 with Lottie animation
               _buildPage(
                 backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                child: Lottie.network(
-                  'https://lottie.host/a2087a7a-101c-4723-8490-f3ade33e4192/7wU0kwBN0N.json',
-                  height: 300,
-                  width: 300,
-                  fit: BoxFit.cover,
-                ),
+                assetPath: 'assets/animation/onloading_3.json',
                 text: 'Effortless Prescription & Health Management',
               ),
             ],
@@ -107,7 +92,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   Widget _buildPage({
     required Color backgroundColor,
-    required Widget child,
+    required String assetPath,
     required String text,
   }) {
     return Container(
@@ -115,12 +100,16 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          child,
+          Lottie.asset(
+            assetPath,
+            height: 300,
+            width: 300,
+            fit: BoxFit.cover,
+          ),
           const SizedBox(height: 20),
           Text(text),
         ],
       ),
     );
   }
-
 }

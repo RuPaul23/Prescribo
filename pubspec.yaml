@@ -1,10 +1,10 @@
 name: prescribo
 description: A new Flutter project.
 version: 1.0.0+1
-environment: 
+environment:
   sdk: '>=2.12.0 <3.0.0'
-dependencies: 
-  flutter: 
+dependencies:
+  flutter:
     sdk: flutter
   cached_network_image: ^3.3.0
   flutter_svg: ^2.0.9
@@ -13,22 +13,24 @@ dependencies:
   google_fonts: ^6.1.0
   rive: ^0.12.4
   flutter_barcode_scanner: ^2.0.0
-  image_picker: ^0.8.4+4
+  image_picker: ^1.0.7
   pdf: 3.10.7
   lottie: ^1.4.3
   smooth_page_indicator: ^1.1.0
   camera: ^0.10.5+9
-dev_dependencies: 
-  flutter_test: 
+  
+dev_dependencies:
+  flutter_test:
     sdk: flutter
-flutter: 
+flutter:
   uses-material-design: true
-  assets: 
+  assets:
     - assets/
     - assets/images/
-  fonts: 
+    - assets/animation/
+  fonts:
     - family: Inter
-      fonts: 
+      fonts:
         - asset: assets/fonts/InterBold.ttf
           weight: 700
         - asset: assets/fonts/InterRegular.ttf
@@ -38,7 +40,7 @@ flutter:
         - asset: assets/fonts/InterMedium.ttf
           weight: 500
     - family: Plus Jakarta Sans
-      fonts: 
+      fonts:
         - asset: assets/fonts/PlusJakartaSansMedium.ttf
           weight: 500
         - asset: assets/fonts/PlusJakartaSansSemiBold.ttf

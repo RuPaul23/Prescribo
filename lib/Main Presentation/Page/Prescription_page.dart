@@ -2,9 +2,18 @@
 import 'package:prescribo/Main%20Presentation/ListBar/VerticalList.dart';
 
 class PrescriptionPage extends StatelessWidget {
+
+  
   final List _prescription = [
     'Prescription 1',
     'Prescription 2',
+    'Prescription 3',
+    'Prescription 3',
+    'Prescription 3',
+    'Prescription 3',
+    'Prescription 3',
+    'Prescription 3',
+    'Prescription 3',
     'Prescription 3',
   ];
   @override
