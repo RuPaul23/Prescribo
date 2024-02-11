@@ -38,7 +38,6 @@ class LandingPage extends StatelessWidget {
               SizedBox(height: 18),
               // Home List
               _buildHomeList(context),
-              SizedBox(height: 10),
             ],
           ),
         ),
