@@ -2,7 +2,7 @@ name: prescribo
 description: A new Flutter project.
 version: 1.0.0+1
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=2.18.0-151.0.dev <3.0.0'
 dependencies:
   flutter:
     sdk: flutter
@@ -25,6 +25,8 @@ dependencies:
   easy_pdf_viewer: ^1.0.6
   firebase_auth: ^4.17.4
   carousel_slider: ^4.2.1
+  flutter_native_splash: ^2.3.10
+  get: ^4.6.6
 
   
 dev_dependencies:

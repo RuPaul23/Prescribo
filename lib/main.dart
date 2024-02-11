@@ -1,7 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'core/app_export.dart';
+import 'package:prescribo/Main%20Presentation/Main-Rounting/MainRounting.dart';
+import 'package:prescribo/core/utils/new_utils/theme/theme.dart';
+import 'package:prescribo/core/utils/size_utils.dart';
+import 'package:prescribo/routes/app_routes.dart';
+import 'package:prescribo/theme/theme_helper.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,19 +23,22 @@ void main() async {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) {
+
         return MaterialApp(
-          theme: theme,
-          title: 'prescribo',
+          themeMode: ThemeMode.system,
+          theme: CustomAppTheme.lightTheme,
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.splashScreen,
           routes: AppRoutes.routes,
         );
-      },
+      }
     );
   }
 }

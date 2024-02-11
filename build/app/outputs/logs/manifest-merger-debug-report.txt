@@ -17,6 +17,7 @@ MERGED from [:flutter_plugin_android_lifecycle] D:\Desktop\Projects\prescribo-v1
 MERGED from [:sqflite] D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_native_splash] D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:easy_pdf_viewer] D:\Desktop\Projects\prescribo-v1.0.1\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\paulr\.gradle\caches\transforms-3\2327b1e79053fe323844ae81509209b7\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:24.10.1] C:\Users\paulr\.gradle\caches\transforms-3\57a8431d0dbd9a632f3b3c47ef16feac\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:2:1-26:12
@@ -248,6 +249,8 @@ MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\
 MERGED from [:path_provider_android] D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:rive_common] D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_native_splash\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:easy_pdf_viewer] D:\Desktop\Projects\prescribo-v1.0.1\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:easy_pdf_viewer] D:\Desktop\Projects\prescribo-v1.0.1\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:22.3.1] C:\Users\paulr\.gradle\caches\transforms-3\2327b1e79053fe323844ae81509209b7\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:21:5-23:64
