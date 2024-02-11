@@ -18,6 +18,14 @@ dependencies:
   lottie: ^1.4.3
   smooth_page_indicator: ^1.1.0
   camera: ^0.10.5+9
+  firebase_core: ^2.25.4
+  cloud_firestore: ^4.3.2
+  firebase_storage: ^11.0.11
+  file_picker: ^5.2.5
+  easy_pdf_viewer: ^1.0.6
+  firebase_auth: ^4.17.4
+  carousel_slider: ^4.2.1
+
   
 dev_dependencies:
   flutter_test:

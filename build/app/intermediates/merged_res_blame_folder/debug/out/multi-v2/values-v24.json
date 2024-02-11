@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.prescribo.app-mergeDebugResources-32:/values-v24/values-v24.xml",
+            "outputFile": "com.prescribo.app-mergeDebugResources-35:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\900afe13d9d9a0d34b487941c82c8caf\\transformed\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\8397ed95fbfeb8b9ab55a24a7b1ee1a0\\transformed\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\669be9f9be941ca97167de32292c628e\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\3ba05547803ed05d2730c0001d7fe647\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

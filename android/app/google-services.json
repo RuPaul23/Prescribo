@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505971008584",
+    "project_id": "prescribo-79873",
+    "storage_bucket": "prescribo-79873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505971008584:android:2f84b7a80d19396d6e647d",
+        "android_client_info": {
+          "package_name": "com.prescribo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjqJ9scnk99f1W90lzUc7lZbgJ9sXmXSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

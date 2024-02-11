@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.prescribo.app-mergeDebugResources-32:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.prescribo.app-mergeDebugResources-35:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\5da320f6b164a2718d8cb34850b1169e\\transformed\\material-1.3.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\63a3bcf2057e6130085ae68b997240fb\\transformed\\material-1.3.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

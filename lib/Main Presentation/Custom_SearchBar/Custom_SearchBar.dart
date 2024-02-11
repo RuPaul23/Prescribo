@@ -1,78 +1,74 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(CustomSearch());
-
-class CustomSearch extends StatefulWidget {
+class SearchInput extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  State<SearchInput> createState() => _SearchInputState();
 }
 
-class _MyAppState extends State<CustomSearch> {
-  final _searchController = TextEditingController();
-  String _searchText = "";
-  List<String> _items = [
-    "Item 1",
-    "Item 2",
-    "Item 3",
-    "Item 4",
-    "Item 5",
-  ];
-
+class _SearchInputState extends State<SearchInput> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Custom Search Bar'),
-        ),
-        body: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextField(
-                      controller: _searchController,
-                      onChanged: (text) {
-                        setState(() {
-                          _searchText = text;
-                        });
-                      },
-                      decoration: InputDecoration(
-                        hintText: 'Search',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
+    // Get screen size
+    final Size screenSize = MediaQuery.of(context).size;
+
+    // Calculate responsive margins
+    double screenHeight = screenSize.height;
+    double screenWidth = screenSize.width;
+    double topMargin = screenHeight * 0.01; // 1% of screen height
+    double horizontalMargin = screenWidth * 0.01; // 5% of screen width
+
+    return Container(
+      margin: EdgeInsets.only(top: topMargin, left: horizontalMargin, right: horizontalMargin),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Flexible(
+                flex: 1,
+                child: SizedBox(
+                  height: 50, // Set the height of the TextField
+                  child: TextField(
+                    cursorColor: Colors.grey,
+                    decoration: InputDecoration(
+                      fillColor: Color.fromARGB(255, 231, 231, 231),
+                      filled: true,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none,
                       ),
+                      hintText: 'Search',
+                      hintStyle: TextStyle(color: Colors.grey, fontSize: 18),
+                      prefixIcon: Container(
+                        padding: EdgeInsets.all(15),
+                        child: Icon(
+                          Icons.search,
+                          color: Colors.grey,
+                          size: 18,
+                        ),
+                        width: 18,
+                      ),
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
-                  IconButton(
-                    icon: Icon(Icons.search),
-                    onPressed: () {},
-                  ),
-                ],
+                ),
               ),
-            ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: _items.length,
-                itemBuilder: (context, index) {
-                  if (_searchText.isEmpty ||
-                      _items[index]
-                          .toLowerCase()
-                          .contains(_searchText.toLowerCase())) {
-                    return ListTile(
-                      title: Text(_items[index]),
-                    );
-                  } else {
-                    return Container();
-                  }
-                },
+              Container(
+                margin: EdgeInsets.only(left: 10),
+                padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).primaryColor,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Icon(
+                  Icons.filter_alt_outlined,
+                  color: Colors.white,
+                  size: 18,
+                ),
+                width: 50,
               ),
-            ),
-          ],
-        ),
+            ],
+          )
+        ],
       ),
     );
   }
