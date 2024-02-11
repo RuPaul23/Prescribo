@@ -123,7 +123,7 @@ class CustomSearchView extends StatelessWidget {
               child: IconButton(
                 onPressed: () => controller!.clear(),
                 icon: Icon(
-                  Icons.clear,
+                  Icons.clear_rounded,
                   color: Colors.grey.shade600,
                 ),
               ),

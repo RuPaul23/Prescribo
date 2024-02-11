@@ -108,6 +108,8 @@ class ImageConstant {
   // Precription images
   static String imgArrowDownSign = '$imagePath/img_arrow_down_sign.png';
 
+  static String imgMenubar = '$imagePath/menu-bar.png';
+
   static String imgImage23 = '$imagePath/img_image_23.png';
 
   // Profile images
