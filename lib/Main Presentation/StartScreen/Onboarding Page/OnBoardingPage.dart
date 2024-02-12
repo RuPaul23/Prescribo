@@ -75,8 +75,9 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               TextButton(
                 child: const Text('Next'),
                 onPressed: () {
-                  if (controller.page!.toInt() == 2)
-                    Navigator.pushNamed(context, AppRoutes.Landingpage);
+                  if (controller.page!.toInt() == 2) {
+                    Navigator.pushNamed(context, AppRoutes.loginPage);
+                  }
                   else {
                     controller.nextPage(
                       duration: const Duration(milliseconds: 500),

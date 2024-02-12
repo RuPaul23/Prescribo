@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:prescribo/Main%20Presentation/Main-Rounting/MainRounting.dart';
 import 'package:prescribo/core/utils/new_utils/theme/theme.dart';
-import 'package:prescribo/core/utils/size_utils.dart';
+import 'package:prescribo/core/utils/size_old_figma.dart';
 import 'package:prescribo/routes/app_routes.dart';
 import 'package:prescribo/theme/theme_helper.dart';
 

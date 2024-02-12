@@ -3,6 +3,7 @@ import 'package:prescribo/Main%20Presentation/Home%20Screens/CalendarPage/Calend
 import 'package:prescribo/Main%20Presentation/Home%20Screens/LandingPage/Landing_page.dart';
 import 'package:prescribo/Main%20Presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
 import 'package:prescribo/Main%20Presentation/Home%20Screens/Profile/Profile_page.dart';
+import 'package:prescribo/Main%20Presentation/StartScreen/LogIn/login_Page.dart';
 import 'package:prescribo/Main%20Presentation/StartScreen/Onboarding%20Page/OnBoardingPage.dart';
 import 'package:prescribo/Main%20Presentation/StartScreen/SplashScreen/splash_screen.dart';
 import 'package:prescribo/Main%20Presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
@@ -12,31 +13,7 @@ class AppRoutes {
 
   static const String onboardingScreen = '/onboarding_screen';
 
-  static const String loginScreen = '/login_screen';
-
-  static const String loginWrongPasswordScreen = '/login_wrong_password_screen';
-
-  static const String loginCorrectPasswordScreen =
-      '/login_correct_password_screen';
-
-  static const String signUpScreen = '/sign_up_screen';
-
-  static const String signUpActiveScreen = '/sign_up_active_screen';
-
-  static const String signUpCorrectPasswordScreen =
-      '/sign_up_correct_password_screen';
-
-  static const String resetPasswordEmailPage = '/reset_password_email_page';
-
-  static const String resetPasswordPhonePage = '/reset_password_phone_page';
-
-  static const String resetPasswordPhoneTabContainerScreen =
-      '/reset_password_phone_tab_container_screen';
-
-  static const String resetPasswordVerifyCodeScreen =
-      '/reset_password_verify_code_screen';
-
-  static const String createNewPasswordScreen = '/create_new_password_screen';
+  static const String loginPage = '/login_page';
 
   static const String homeScreen = '/home_screen';
 
@@ -63,6 +40,7 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     splashScreen: (context) => SplashScreen(),
     Onboardingpage: (context) => OnBoardingPage(),
+    loginPage: (context) => LoginPage(),
     Landingpage: (context) => LandingPage(),
     CustomNavBar:(context) => CustomnavigationBar(),
     remainderScreen: (context) => CalendarPage(),
