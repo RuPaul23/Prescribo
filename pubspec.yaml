@@ -27,7 +27,11 @@ dependencies:
   carousel_slider: ^4.2.1
   flutter_native_splash: ^2.3.10
   get: ^4.6.6
+  get_storage: ^2.1.1
   iconsax: ^0.0.8
+  url_launcher: ^6.1.12
+  http: ^1.1.0
+  logger: ^2.0.1
 
   
 dev_dependencies:
@@ -39,6 +43,9 @@ flutter:
     - assets/
     - assets/images/
     - assets/animation/
+    - assets/animation/onloading_1.json
+    - assets/animation/onloading_2.json
+    - assets/animation/onloading_3.json
     - assets/fonts/
     - assets/new_assets/logos/
     - assets/new_assets/icons/

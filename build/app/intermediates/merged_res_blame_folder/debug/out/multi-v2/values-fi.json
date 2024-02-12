@@ -4,7 +4,7 @@
             "outputFile": "com.prescribo.app-mergeDebugResources-35:/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\67e37d24d45f4720dd2eeab51cab4bfb\\transformed\\browser-1.4.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\571a848533da0d30077068b77d44640c\\transformed\\browser-1.5.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

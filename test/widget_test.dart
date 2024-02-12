@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:prescribo/Main%20Presentation/Main-Rounting/MainRounting.dart';
+import 'package:prescribo/presentation/Main-Rounting/MainRounting.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

@@ -4,6 +4,23 @@
             "outputFile": "com.prescribo.app-mergeDebugResources-35:/values/values.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\571a848533da0d30077068b77d44640c\\transformed\\browser-1.5.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,113,179,242,304,375,447,515,582,661",
+                        "endColumns": "57,65,62,61,70,71,67,66,78,68",
+                        "endOffsets": "108,174,237,299,370,442,510,577,656,725"
+                    },
+                    "to": {
+                        "startLines": "414,415,416,417,604,605,1115,1120,1121,1122",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "20219,20277,20343,20406,33140,33211,67424,67960,68027,68106",
+                        "endColumns": "57,65,62,61,70,71,67,66,78,68",
+                        "endOffsets": "20272,20338,20401,20463,33206,33278,67487,68022,68101,68170"
+                    }
+                },
+                {
                     "source": "D:\\Desktop\\Projects\\prescribo-v1.0.1\\build\\flutter_barcode_scanner\\intermediates\\packaged_res\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
@@ -344,23 +361,6 @@
                         "endLines": "310,667,668,669,677,678,679,965,6987",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "14713,37303,37351,37407,38093,38169,38241,56786,414408"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\paulr\\.gradle\\caches\\transforms-3\\67e37d24d45f4720dd2eeab51cab4bfb\\transformed\\browser-1.4.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,113,179,242,304,375,447,515,582,661",
-                        "endColumns": "57,65,62,61,70,71,67,66,78,68",
-                        "endOffsets": "108,174,237,299,370,442,510,577,656,725"
-                    },
-                    "to": {
-                        "startLines": "414,415,416,417,604,605,1115,1120,1121,1122",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "20219,20277,20343,20406,33140,33211,67424,67960,68027,68106",
-                        "endColumns": "57,65,62,61,70,71,67,66,78,68",
-                        "endOffsets": "20272,20338,20401,20463,33206,33278,67487,68022,68101,68170"
                     }
                 },
                 {

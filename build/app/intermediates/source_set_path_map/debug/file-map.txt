@@ -5,8 +5,8 @@ com.prescribo.app-jetified-startup-runtime-1.1.1-3 C:\Users\paulr\.gradle\caches
 com.prescribo.app-lifecycle-viewmodel-2.6.1-4 C:\Users\paulr\.gradle\caches\transforms-3\3a9c06526e9962653568bc0dd94398d1\transformed\lifecycle-viewmodel-2.6.1\res
 com.prescribo.app-media-1.0.0-5 C:\Users\paulr\.gradle\caches\transforms-3\3ba05547803ed05d2730c0001d7fe647\transformed\media-1.0.0\res
 com.prescribo.app-jetified-window-java-1.0.0-beta04-6 C:\Users\paulr\.gradle\caches\transforms-3\4012809eafcff1f43fc1e4be954db939\transformed\jetified-window-java-1.0.0-beta04\res
-com.prescribo.app-material-1.3.0-7 C:\Users\paulr\.gradle\caches\transforms-3\63a3bcf2057e6130085ae68b997240fb\transformed\material-1.3.0\res
-com.prescribo.app-browser-1.4.0-8 C:\Users\paulr\.gradle\caches\transforms-3\67e37d24d45f4720dd2eeab51cab4bfb\transformed\browser-1.4.0\res
+com.prescribo.app-browser-1.5.0-7 C:\Users\paulr\.gradle\caches\transforms-3\571a848533da0d30077068b77d44640c\transformed\browser-1.5.0\res
+com.prescribo.app-material-1.3.0-8 C:\Users\paulr\.gradle\caches\transforms-3\63a3bcf2057e6130085ae68b997240fb\transformed\material-1.3.0\res
 com.prescribo.app-jetified-savedstate-1.2.1-9 C:\Users\paulr\.gradle\caches\transforms-3\6c68ba9ef9f43a716ccddf49f0f211c2\transformed\jetified-savedstate-1.2.1\res
 com.prescribo.app-jetified-profileinstaller-1.3.0-10 C:\Users\paulr\.gradle\caches\transforms-3\6ecced2e09ea1e933dd202a0a1f863d3\transformed\jetified-profileinstaller-1.3.0\res
 com.prescribo.app-jetified-activity-1.7.2-11 C:\Users\paulr\.gradle\caches\transforms-3\78468f7313ab21fca27b15d57e1a9bfd\transformed\jetified-activity-1.7.2\res
@@ -44,8 +44,10 @@ com.prescribo.app-packaged_res-42 D:\Desktop\Projects\prescribo-v1.0.1\build\fir
 com.prescribo.app-packaged_res-43 D:\Desktop\Projects\prescribo-v1.0.1\build\firebase_core\intermediates\packaged_res\debug
 com.prescribo.app-packaged_res-44 D:\Desktop\Projects\prescribo-v1.0.1\build\firebase_storage\intermediates\packaged_res\debug
 com.prescribo.app-packaged_res-45 D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_barcode_scanner\intermediates\packaged_res\debug
-com.prescribo.app-packaged_res-46 D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
-com.prescribo.app-packaged_res-47 D:\Desktop\Projects\prescribo-v1.0.1\build\image_picker_android\intermediates\packaged_res\debug
-com.prescribo.app-packaged_res-48 D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\packaged_res\debug
-com.prescribo.app-packaged_res-49 D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\packaged_res\debug
-com.prescribo.app-packaged_res-50 D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-46 D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_native_splash\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-47 D:\Desktop\Projects\prescribo-v1.0.1\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-48 D:\Desktop\Projects\prescribo-v1.0.1\build\image_picker_android\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-49 D:\Desktop\Projects\prescribo-v1.0.1\build\path_provider_android\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-50 D:\Desktop\Projects\prescribo-v1.0.1\build\rive_common\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-51 D:\Desktop\Projects\prescribo-v1.0.1\build\sqflite\intermediates\packaged_res\debug
+com.prescribo.app-packaged_res-52 D:\Desktop\Projects\prescribo-v1.0.1\build\url_launcher_android\intermediates\packaged_res\debug

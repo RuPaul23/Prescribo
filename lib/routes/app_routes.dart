@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:prescribo/Main%20Presentation/Home%20Screens/CalendarPage/Calender_page.dart';
-import 'package:prescribo/Main%20Presentation/Home%20Screens/LandingPage/Landing_page.dart';
-import 'package:prescribo/Main%20Presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
-import 'package:prescribo/Main%20Presentation/Home%20Screens/Profile/Profile_page.dart';
-import 'package:prescribo/Main%20Presentation/StartScreen/LogIn/login_Page.dart';
-import 'package:prescribo/Main%20Presentation/StartScreen/Onboarding%20Page/OnBoardingPage.dart';
-import 'package:prescribo/Main%20Presentation/StartScreen/SplashScreen/splash_screen.dart';
-import 'package:prescribo/Main%20Presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
+import 'package:prescribo/features/authentication/screens/onboardingPage/onboarding.dart';
+import 'package:prescribo/presentation/Home%20Screens/CalendarPage/Calender_page.dart';
+import 'package:prescribo/presentation/Home%20Screens/LandingPage/Landing_page.dart';
+import 'package:prescribo/presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
+import 'package:prescribo/presentation/Home%20Screens/Profile/Profile_page.dart';
+import 'package:prescribo/features/authentication/screens/LogIn/login_Page.dart';
+import 'package:prescribo/presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
 
 class AppRoutes {
   static const String splashScreen = '/splash_screen';
@@ -38,7 +37,6 @@ class AppRoutes {
   static const String Onboardingpage = '/OnBoardingPage';
 
   static Map<String, WidgetBuilder> routes = {
-    splashScreen: (context) => SplashScreen(),
     Onboardingpage: (context) => OnBoardingPage(),
     loginPage: (context) => LoginPage(),
     Landingpage: (context) => LandingPage(),
