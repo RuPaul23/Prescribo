@@ -42,7 +42,6 @@ flutter:
   assets:
     - assets/
     - assets/images/
-    - assets/animation/
     - assets/animation/onloading_1.json
     - assets/animation/onloading_2.json
     - assets/animation/onloading_3.json
@@ -51,6 +50,7 @@ flutter:
     - assets/new_assets/icons/
     - assets/new_assets/images/
     - assets/new_assets/fonts/
+    - assets/new_assets/images/on_boarding_images/sammy-line-delivery.gif
   fonts:
     - family: Inter
       fonts:

@@ -49,12 +49,12 @@ class LoginForm extends StatelessWidget {
               const SizedBox(height: CustomSizes.spaceBtwInputFields),
         
               //Sign In Button
-              SizedBox(width: double.infinity,height: 50,child: ElevatedButton(onPressed: (){}, child: const Text(CustomTexts.signIn))),
+              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: const Text(CustomTexts.signIn))),
               const SizedBox(height: CustomSizes.spaceBtwItems),
               
         
               // Create Button
-              SizedBox(width: double.infinity,height: 50,child: OutlinedButton(onPressed: (){}, child: const Text(CustomTexts.createAccount))),
+              SizedBox(width: double.infinity,child: OutlinedButton(onPressed: (){}, child: const Text(CustomTexts.createAccount))),
               const SizedBox(height: CustomSizes.spaceBtwSections),
             ],
           ),

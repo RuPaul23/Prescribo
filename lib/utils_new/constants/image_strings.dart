@@ -45,9 +45,9 @@ class CustomImages {
   static const String verifyIllustration = "assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
 
   // -- OnBoarding Texts
-  static const String onBoardingImage1 = "assets/animation/onloading_1.json";
-  static const String onBoardingImage2 = "assets/animation/onloading_2.json";
-  static const String onBoardingImage3 = "assets/animation/onloading_3.json";
+  static const String onBoardingImage1 = "assets/new_assets/images/on_boarding_images/sammy-line-delivery.gif";
+  static const String onBoardingImage2 = "assets/new_assets/images/on_boarding_images/sammy-line-delivery.gif";
+  static const String onBoardingImage3 = "assets/new_assets/images/on_boarding_images/sammy-line-delivery.gif";
 
   // -- Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";
