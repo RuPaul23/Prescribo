@@ -29,6 +29,10 @@ class ImageConstant {
   // 15_Reset Password - Phone images
   static String imgIconCall = '$imagePath/img_icon_call.svg';
 
+
+
+
+
   // Home images
   static String imgNotification = '$imagePath/notification-bell.png';
 
@@ -37,6 +41,10 @@ class ImageConstant {
   static String imgOrder = '$imagePath/img_group_9.png';
 
   static String imgCategory = '$imagePath/Category.png';
+
+
+
+
 
 //Other
   static String imgMedicalPrescriptionRafiki =

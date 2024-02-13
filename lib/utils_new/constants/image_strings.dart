@@ -163,5 +163,19 @@ class CustomImages {
   static const String paystack = "assets/icons/payment_methods/paystack.png";
   static const String paytm = "assets/icons/payment_methods/paytm.png";
   static const String successfulPaymentIcon = "assets/icons/payment_methods/successful_payment_icon.png";
+
+
+
+
+  // -- Features Images
+    // Home images
+  static const String Notification = 'assets/images/notification-bell.png';
+
+  static const String Prescription = 'assets/images/img_group_10.png';
+
+  static const String Order = 'assets/images/img_group_9.png';
+
+  static const String Category = 'assets/images/Category.png';
+
 }
 
