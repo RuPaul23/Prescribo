@@ -1,7 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:prescribo/features/authentication/screens/signupPage/verifyemail.dart';
 import 'package:prescribo/features/authentication/screens/signupPage/widget/terms&condition_checkbox.dart';
+import 'package:prescribo/utils_new/constants/image_strings.dart';
 import 'package:prescribo/utils_new/constants/sizes.dart';
 import 'package:prescribo/utils_new/constants/text_strings.dart';
 
@@ -85,7 +88,13 @@ class CustomSignUpForm extends StatelessWidget {
     
           const SizedBox(height: CustomSizes.spaceBtwSections),
           ///Sign up button
-          SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: Text(CustomTexts.createAccount)))
+          SizedBox(
+            width: double.infinity, 
+            child: ElevatedButton(onPressed: ()=> Get.to(()=> const VerifyEmailPage(
+              image: CustomImages.staticSuccessIllustration, 
+              title: CustomTexts.yourAccountCreatedTitle, 
+              subTitle: CustomTexts.yourAccountCreatedSubTitle,)), 
+              child: Text(CustomTexts.createAccount)))
           
         ],
       ),

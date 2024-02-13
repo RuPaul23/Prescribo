@@ -164,6 +164,12 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "cupertino_icons",
+      "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "easy_pdf_viewer",
       "rootUri": "file:///C:/Users/paulr/AppData/Local/Pub/Cache/hosted/pub.dev/easy_pdf_viewer-1.0.7",
       "packageUri": "lib/",
@@ -806,7 +812,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2024-02-12T21:50:32.581706Z",
+  "generated": "2024-02-13T10:31:58.424347Z",
   "generator": "pub",
   "generatorVersion": "3.2.6"
 }
