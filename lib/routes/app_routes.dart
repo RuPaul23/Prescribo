@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/features/authentication/screens/loginPage/login_Page.dart';
 import 'package:prescribo/features/authentication/screens/onboardingPage/onboarding.dart';
 import 'package:prescribo/presentation/Home%20Screens/CalendarPage/Calender_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/LandingPage/Landing_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/Profile/Profile_page.dart';
-import 'package:prescribo/features/authentication/screens/LogIn/login_Page.dart';
 import 'package:prescribo/presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
 
 class AppRoutes {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:prescribo/features/authentication/screens/LogIn/login_Page.dart';
+import 'package:prescribo/features/authentication/screens/loginPage/login_Page.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
