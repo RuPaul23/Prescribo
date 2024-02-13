@@ -51,7 +51,7 @@ class _ProfilePicState extends State<ProfilePic> {
                     fit: BoxFit.cover,
                   )
                 : Lottie.asset(
-                    'assets/animation/Profile_user.json',
+                    'assets\animation\onloading_1.gif',
                     height: 115,
                     width: 115,
                     fit: BoxFit.cover,

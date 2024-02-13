@@ -52,6 +52,8 @@ flutter:
     - assets/new_assets/images/
     - assets/new_assets/fonts/
     - assets/new_assets/images/on_boarding_images/sammy-line-delivery.gif
+    - assets/new_assets/images/animations/sammy-line-success.png
+    - 
   fonts:
     - family: Inter
       fonts:

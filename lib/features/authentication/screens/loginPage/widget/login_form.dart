@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:prescribo/features/authentication/screens/signupPage/singupPage.dart';
+import 'package:prescribo/presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
 import 'package:prescribo/utils_new/constants/sizes.dart';
 import 'package:prescribo/utils_new/constants/text_strings.dart';
 
@@ -51,7 +52,7 @@ class LoginForm extends StatelessWidget {
               const SizedBox(height: CustomSizes.spaceBtwInputFields),
         
               //Sign In Button
-              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: const Text(CustomTexts.signIn))),
+              SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> const CustomNavigationBar()), child: const Text(CustomTexts.signIn))),
               const SizedBox(height: CustomSizes.spaceBtwItems),
               
         

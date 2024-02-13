@@ -40,7 +40,7 @@ class AppRoutes {
     Onboardingpage: (context) => OnBoardingPage(),
     loginPage: (context) => LoginPage(),
     Landingpage: (context) => LandingPage(),
-    CustomNavBar:(context) => CustomnavigationBar(),
+    CustomNavBar:(context) => CustomNavigationBar(),
     remainderScreen: (context) => CalendarPage(),
     precriptionScreen: (context) => PrescriptionPage(),
     profileScreen: (context) => ProfileScreen(),
