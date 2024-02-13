@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/features/authentication/screens/homePage/home.dart';
 import 'package:prescribo/features/authentication/screens/loginPage/login_Page.dart';
 import 'package:prescribo/features/authentication/screens/onboardingPage/onboarding.dart';
 import 'package:prescribo/presentation/Home%20Screens/CalendarPage/Calender_page.dart';
-import 'package:prescribo/presentation/Home%20Screens/LandingPage/Landing_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/Profile/Profile_page.dart';
 import 'package:prescribo/presentation/Widget/Custom_NavBar/Custom_NavigationBar.dart';
@@ -14,7 +14,7 @@ class AppRoutes {
 
   static const String loginPage = '/login_page';
 
-  static const String homeScreen = '/home_screen';
+  static const String homePage = '/home_page';
 
   static const String consultScreen = '/consult_screen';
 
@@ -39,7 +39,7 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     Onboardingpage: (context) => OnBoardingPage(),
     loginPage: (context) => LoginPage(),
-    Landingpage: (context) => LandingPage(),
+    homePage: (context) => HomePage(),
     CustomNavBar:(context) => CustomNavigationBar(),
     remainderScreen: (context) => CalendarPage(),
     precriptionScreen: (context) => PrescriptionPage(),

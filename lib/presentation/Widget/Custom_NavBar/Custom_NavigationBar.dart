@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prescribo/core/app_export.dart';
+import 'package:prescribo/features/authentication/screens/homePage/home.dart';
 import 'package:prescribo/presentation/Home%20Screens/CalendarPage/Calender_page.dart';
-import 'package:prescribo/presentation/Home%20Screens/LandingPage/Landing_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/PrescriptionPage/Prescription_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/Profile/Profile_page.dart';
 import 'package:prescribo/presentation/Home%20Screens/Scanner%20Page/Camera_Screen.dart';
@@ -59,10 +59,9 @@ class CustomNavigationBar extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
-    LandingPage(),
+    HomePage(),
     PrescriptionPage(),
     CameraScreen(),
-    //ScannerPage(),
     CalendarPage(),
     ProfileScreen(),
   ];

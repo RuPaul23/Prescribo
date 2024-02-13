@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prescribo/utils_new/constants/colors.dart';
 
 class CircularContainer extends StatelessWidget {
   const CircularContainer({
@@ -8,7 +9,7 @@ class CircularContainer extends StatelessWidget {
     this.height = 400,
     this.radius = 400,
     this.padding = 0,
-    this.backgroundColor = Colors.white,
+    this.backgroundColor = CustomColors.white,
   });
 
   final double? width;
