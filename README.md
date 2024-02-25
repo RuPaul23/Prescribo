@@ -1,61 +1,70 @@
 # Prescribo
 
-Prescribo is a healthcare management system designed to simplify the prescription process, offering convenience, efficiency, and a paperless experience for both healthcare providers and patients.
+Prescribo is a comprehensive healthcare management system designed to streamline medication management, facilitate prescription storage, and enhance patient-doctor communication. With Prescribo, users can effortlessly manage their prescriptions, receive medication reminders, access medical news, order medicines, and consult doctors, all within one platform.
 
 ## Features
 
-### Lifetime Prescription Storage
-
+### 1. Lifetime Prescription Storage
 - Securely store and manage lifetime prescriptions for patients.
 - Easy access to prescription history for healthcare providers.
 
-### ReadyMed: Medication Reminder System
-
+### 2. ReadyMed: Medication Reminder System
 - Set medication schedules with specific times and dosages.
 - Receive timely reminders to ensure medication adherence.
 - Customizable alert preferences for a personalized experience.
 
-### Scanify: Medicine Details Scanner
+### 3. PresCare: Powered by Gemini
+- **Text Only**: Enables patients to inquire about medicine news and related information.
+- **Image to Text**: Allows users to upload prescriptions, converting images to text for easy interpretation.
 
-- Scan and store detailed information about medicines.
-- Capture images of medicine packaging for quick reference.
-- Build a comprehensive digital inventory of prescribed medications.
+### 4. Order Medicine
+- Facilitates the seamless ordering of medicines directly from prescriptions.
 
-### Prescription Scanner
-
-- Digitize paper prescriptions for easy storage and retrieval.
-- Extract relevant information for quick reference.
-- Reduce reliance on physical documents for healthcare management.
+### 5. Consult Doctor
+- Provides users with the ability to consult with healthcare professionals for medical advice and assistance.
 
 ## Demo video
 
+https://github.com/RuPaul23/Prescribo/assets/105512611/a130862c-b9da-4c8a-bd3a-74a4f4589f98
 
-https://github.com/RuPaul23/Prescribo/assets/105512611/63a5b715-2214-40bd-9312-d33443723e93
+
+## Getting Started
+
+To get started with Prescribo, follow these simple steps:
+
+1. Clone the repository to your local machine: (Make sure you download the Version 2 Branch)*
+   ```
+   git clone https://github.com/your_username/Prescribo.git
+   ```
+
+2. Download dependencies by running the following command in your terminal within the project directory:
+   ```
+   flutter pub get
+   ```
+
+3. Next, type the following command to run the app:
+   ```
+   flutter run
+   ```
+
+Yaay! You're all set to explore and use Prescribo. Enjoy!
+
+## Technologies Used
+
+- Backend: Firebase and Gemini API
+- Frontend: Flutter 
+- Database: Firebase Database
+- Authentication: JWT (JSON Web Tokens)
+- External API Integration: Gemini
 
 
 ### Application structure
 After successful build, your application structure should look like this:
-                    
-```
-.
-├── android                         - It contains files required to run the application on an Android platform.
-├── assets                          - It contains all images and fonts of your application.
-├── ios                             - It contains files required to run the application on an iOS platform.
-├── lib                             - Most important folder in the application, used to write most of the Dart code..
-    ├── main.dart                   - Starting point of the application
-    ├── core
-    │   ├── app_export.dart         - It contains commonly used file imports
-    │   ├── constants               - It contains static constant class file
-    │   └── utils                   - It contains common files and utilities of the application
-    ├── presentation                - It contains widgets of the screens
-    ├── routes                      - It contains all the routes of the application
-    └── theme                       - It contains app theme and decoration classes
-    └── widgets                     - It contains all custom widget classes
-```
+
 
 ## Installation
 
-Currently it is in Prototype. Stay Tune for Version 2.0!
+Currently Version 2.0 is out! Stay Tune for Version 3.0!
 
 ## Contributing
 
