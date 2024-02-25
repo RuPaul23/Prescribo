@@ -58,10 +58,6 @@ Yaay! You're all set to explore and use Prescribo. Enjoy!
 - External API Integration: Gemini
 
 
-### Application structure
-After successful build, your application structure should look like this:
-
-
 ## Installation
 
 Currently Version 2.0 is out! Stay Tune for Version 3.0!
