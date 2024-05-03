@@ -25,7 +25,10 @@ Prescribo is a comprehensive healthcare management system designed to streamline
 
 ## Demo video
 
-https://github.com/RuPaul23/Prescribo/assets/105512611/a130862c-b9da-4c8a-bd3a-74a4f4589f98
+
+https://github.com/RuPaul23/Prescribo/assets/105512611/3d0e7ee5-3fd8-4f76-81c1-be5bd68688b3
+
+
 
 
 ## Getting Started
